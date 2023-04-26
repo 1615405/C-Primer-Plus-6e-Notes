@@ -13,12 +13,12 @@ prefer, ask for the height in centimeters and convert that to inches.
 
 int main(void)
 {
-	const float CM_PER_INCH = 2.54;
-	float height;
+    const float CM_PER_INCH = 2.54;
+    float height;
 
-	printf("Enter your height (in inches): ");
-	scanf("%f", &height);
-	printf("You are %f centimeters tall.\n", height * CM_PER_INCH);
+    printf("Enter your height (in inches): ");
+    scanf("%f", &height);
+    printf("You are %f centimeters tall.\n", height * CM_PER_INCH);
 
-	return 0;
+    return 0;
 }
