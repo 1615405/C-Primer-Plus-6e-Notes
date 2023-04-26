@@ -26,7 +26,7 @@ void two(void);
 int main(void)
 {
     printf("starting Now : \n");
-    one_three(); /* 函数嵌套 */
+    one_three();
     printf("Done!\n");
 
     return 0;
