@@ -10,7 +10,7 @@ then prints the character having that ASCII code.
 
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
 	int ascii_code;
 	printf("Enter an ASCII code: ");
