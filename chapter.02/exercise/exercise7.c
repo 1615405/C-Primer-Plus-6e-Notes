@@ -19,7 +19,7 @@ program use the function as often as needed.
 
 void smile(void);
 
-int main()
+int main(void)
 {
     for (int i = 3; i >= 1; i--) {
         smile();

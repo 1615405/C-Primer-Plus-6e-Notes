@@ -3,7 +3,7 @@
 
 > Chapter 2 Exercise 5:
 
->Write a program that produces the following output:
+> Write a program that produces the following output:
 
 Brazil, Russia, India, China
 India, China,

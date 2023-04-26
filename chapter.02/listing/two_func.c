@@ -4,7 +4,7 @@
 
 void butler(void);  /* ANSI/ISO C fuinction prototyping */
 
-int main()
+int main(void)
 {
     printf("I will summon the bulter function.\n");
     butler();
