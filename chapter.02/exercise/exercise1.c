@@ -1,4 +1,5 @@
-/* C Primer Plus Sixth Edition
+/* 
+> C Primer Plus Sixth Edition
 
 > Chapter 2 Exercise 1: 
 

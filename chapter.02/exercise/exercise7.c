@@ -1,6 +1,7 @@
-/* C Primer Plus Sixth Edition
+/* 
+> C Primer Plus Sixth Edition
 
-Chapter 2 Exercise 7:
+> Chapter 2 Exercise 7:
 
 > Many studies suggest that smiling has benefits. Write a program that produces the
 following output:
