@@ -14,7 +14,7 @@ and to design the program.
 
 const double INCH_PER_CEREMETER = 2.54;
 
-int main()
+int main(void)
 {
     int inch;
     scanf("%d", &inch);
