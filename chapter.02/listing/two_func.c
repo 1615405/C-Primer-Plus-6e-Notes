@@ -1,8 +1,8 @@
-/* two_func.c -- 一个文件中包含两个函数 */
+/* two_func.c -- a program using two functions in one file */
 
 #include <stdio.h>
 
-void butler(void);
+void butler(void);  /* ANSI/ISO C fuinction prototyping */
 
 int main()
 {
@@ -13,7 +13,7 @@ int main()
     return 0;
 }
 
-void butler(void)
+void butler(void)   /* start of function definition */
 {
     printf("You rang, sir?\n");
 }

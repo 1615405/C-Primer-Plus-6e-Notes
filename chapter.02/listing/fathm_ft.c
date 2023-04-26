@@ -1,4 +1,4 @@
-/* fathm_ft.c -- 把2英寻转换成英尺 */
+/* fathm_ft.c -- converts 2 fathoms to feet */
 
 #include <stdio.h>
 
