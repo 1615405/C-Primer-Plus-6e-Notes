@@ -12,8 +12,8 @@
 
 int main(void)
 {
-	printf("\a"); // sound alert
-	printf("Startled by the sudden sound, Sally shouted, \"By the Great Pumpkin, what was that!\"\n");
+    printf("\a"); // sound alert
+    printf("Startled by the sudden sound, Sally shouted, \"By the Great Pumpkin, what was that!\"\n");
 
-	return 0;
+    return 0;
 }
