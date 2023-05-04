@@ -10,7 +10,7 @@ and to design the program.
 */
 
 
-#include<stdio.h>
+#include <stdio.h>
 
 const double INCH_PER_CEREMETER = 2.54;
 

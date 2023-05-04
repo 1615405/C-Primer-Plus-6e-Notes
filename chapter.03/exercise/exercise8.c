@@ -19,8 +19,8 @@ int main(void)
     /* If the number of cups is not an even whole number, then the number of pints will not be a whole number. */
     const float PINTS_PER_CUP = .5;
     const float OUNCES_PER_CUP = 8;
-    const float TBS_PER_CUP = 2 * OUNCES_PER_CUP; // tablespoons/ounce * ounces/cup
-    const float TSP_PER_CUP = 3 * TBS_PER_CUP; // teaspoons/tablespoon * tablespoons/ounce * ounces/cup
+    const float TBS_PER_CUP = 2 * OUNCES_PER_CUP;   // tablespoons/ounce * ounces/cup
+    const float TSP_PER_CUP = 3 * TBS_PER_CUP;      // teaspoons/tablespoon * tablespoons/ounce * ounces/cup
     float cups;
 
     printf("Enter an amount in cups:");
