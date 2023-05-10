@@ -1,12 +1,12 @@
-/* altname.c -- 可移植整数类型名 */
+/* altname.c -- portable names for integer types */
 
 #include <stdio.h>
-#include <stdint.h>     // 支持可移植类型
+#include <stdint.h>     // support portable types
 #include <inttypes.h>
 
-int main()
+int main(void)
 {
-    int32_t me32;  // me32是一个32位有符号整型
+    int32_t me32;  // me32 a 32-bit signed variable
 
     me32 = 459339445;
     printf("First, assume int32_t is int: ");

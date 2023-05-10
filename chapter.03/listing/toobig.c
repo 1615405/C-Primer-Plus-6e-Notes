@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int i = 2147483647;
     unsigned int j = 4294967295;

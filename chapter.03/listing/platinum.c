@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     float weight; /* user weight         */
     float value;  /* platinum equivalent */

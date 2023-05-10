@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     unsigned int un = 3000000000; /* system with 32-bit int */
     short end = 200;              /* and 16-bit short       */

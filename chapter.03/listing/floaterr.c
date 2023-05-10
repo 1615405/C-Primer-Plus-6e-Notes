@@ -1,8 +1,8 @@
-/* floaterr.c -- 浮点数舍入错误 */
+/* floaterr.c -- demonstrates round-off error */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     float a, b;
 
