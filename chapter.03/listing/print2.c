@@ -1,11 +1,11 @@
-/* print2.c -- 更多printf()的特性 */
+/* print2.c -- more printf() properties */
 
 #include <stdio.h>
 
 int main()
 {
-    unsigned int un = 3000000000; /* int为32位和short为16位的系统 */
-    short end = 200;
+    unsigned int un = 3000000000; /* system with 32-bit int */
+    short end = 200;              /* and 16-bit short       */
     long big = 65537;
     long long verybig = 12345678908642;
 
@@ -16,3 +16,7 @@ int main()
 
     return 0;
 }
+
+/**
+ * This examples points out that using the wrong specification can produce unexpected results.
+*/
