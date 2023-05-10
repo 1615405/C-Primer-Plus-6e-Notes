@@ -1,7 +1,8 @@
 /* praise2.c */
+// try the %u or %lu specifiers if you implementation does not recognize the %zd specifier
 
 #include <stdio.h>
-#include <string.h>
+#include <string.h>      /* provide strlen() prototype */
 
 #define PRAISE "You are an extraordinary being."
 

@@ -1,8 +1,8 @@
-/* defines.c -- 使用limits.h和float头文件中定义的明示常量 */
+/* defines.c -- uses defined constants from limit.h and float. */
 
 #include <stdio.h>
-#include <limits.h>  // 整型限制
-#include <float.h>  //  浮点型限制
+#include <limits.h>  // integer limit
+#include <float.h>   // floating-point limit
 
 int main()
 {

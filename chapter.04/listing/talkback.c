@@ -1,15 +1,14 @@
-/* talkback.c -- 演示与用户交互 */
+/* talkback.c -- nosy, informative program */
 
 #include <stdio.h> 
-#include <string.h> // 提供strlen()函数原型
+#include <string.h>   // for strlen() prototype
+#define DENSITY 62.4  // human density in 1bs per cu ft
 
-#define DENSITY 62.4  // 人体密度（单位：磅/立方英尺）
-
-int main()
+int main(void)
 {
     float weight, volume;
     int size, letters;
-    char name[40];  // name是一个可容纳40个字符的数组
+    char name[40];    // name is an array of 40 chars
 
     printf("Hi, What's your first name?\n");
     scanf("%s", name);
@@ -24,3 +23,18 @@ int main()
 
     return 0;
 }
+
+
+/**
+ * The double quotation marks are not part of the string. They inform the compiler that they enclose a string, just as
+ * single quotation marks identify a character.
+ * 
+ * C has no special variable type for strings. Instead, strings are stored in an array of type char. Characters in a
+ * are stored in adjacent memory cells, one character per cell, and an array consists of adjacent memory locations, so
+ * placing a string in an array is quite natural.
+ * 
+ * The \0 is the null character, and C uses it to mark the end of a string. The null character is not the digit of zero.
+ * it is the nonprinting character whose ASCII code value (or equivalent) is 0. Strings in C are always stored with this
+ * terminating null character. The presence of the null character means that the array must have at least one more cell
+ * than the number of characters to be stored.
+*/

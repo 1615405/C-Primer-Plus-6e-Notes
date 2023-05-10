@@ -1,4 +1,4 @@
-/* pizza.c -- 在比萨饼程序中使用已定义的常量 */
+/* pizza.c -- uses defined constants in a pizza context */
 
 #include <stdio.h>
 
