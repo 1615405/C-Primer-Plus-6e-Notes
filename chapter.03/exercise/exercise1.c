@@ -1,11 +1,11 @@
-/* 
-> C Primer Plus Sixth Edition
-
-> chapter 3 Exercise 1:
-
-> Find out what your system does with integer overflow, floating-point overflow,
-and floating point underflow by using the experimental approach; that is,
-write programs that have these problems. 
+/** 
+ * C Primer Plus Sixth Edition
+ *
+ * chapter 3 Exercise 1:
+ *
+ * Find out what your system does with integer overflow, floating-point overflow,
+ * and floating point underflow by using the experimental approach; that is,
+ * write programs that have these problems. 
 */
 
 
