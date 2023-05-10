@@ -1,10 +1,11 @@
-/* 
-> C Primer Plus Sixth Edition
-
-> Chapter 4 Exercise 1:
-
-> Write a program that asks for your first name, your last name, and then prints the names
-in the format last, first. */
+/** 
+ * C Primer Plus Sixth Edition
+ *
+ * Chapter 4 Exercise 1:
+ * 
+ * Write a program that asks for your first name, your last name, and then prints the names
+ * in the format last, first. 
+*/
 
 
 #include <stdio.h>
