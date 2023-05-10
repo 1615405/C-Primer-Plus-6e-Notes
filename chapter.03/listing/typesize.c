@@ -26,5 +26,4 @@ int main(void)
  * 
  * Incidentally, notice in the last few lines how a printf() statement can be spread over two lines. You can do this as
  * long as the break does not occur in the quoted section or in the middle of a word.
- * 
 */
