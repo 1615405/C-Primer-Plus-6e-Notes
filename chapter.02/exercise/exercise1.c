@@ -8,7 +8,7 @@
  * lines, and uses a pair of printf() calls to your first name and last names on one line.
  * The output should look like this (but using your name):
  *
- * Gustav Mahler   <- First print statement
+ * Gustav Mahler    <- First print statement
  * Gustav		    <- Second print statement
  * Mahler		    <- Still the second print statement
  * Gustav Mahler	<- Third and fourth print statements
