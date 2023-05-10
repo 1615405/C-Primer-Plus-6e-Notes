@@ -14,16 +14,16 @@ d. Prints it in a field three characters wider than the name */
 
 int main(void)
 {
-	char name[20];
-	int name_length;
+    char name[20];
+    int name_length;
 
-	printf("Enter your first name: ");
-	scanf("%s", name);
-	name_length = strlen(name);
-	printf("\"%s\"\n", name);                    // a. enclosed in double quotes
-	printf("\"%20s\"\n", name);                  // b. double quotes, 20 char wide, right-justified
-	printf("\"%-20s\"\n", name);                 // c. double quotes, 20 char wide, left-justified
-	printf("\"%*s\"\n", name_length + 3, name);  // d. double quotes, 3 char wider than name
+    printf("Enter your first name: ");
+    scanf("%s", name);
+    name_length = strlen(name);
+    printf("\"%s\"\n", name);                    // a. enclosed in double quotes
+    printf("\"%20s\"\n", name);                  // b. double quotes, 20 char wide, right-justified
+    printf("\"%-20s\"\n", name);                 // c. double quotes, 20 char wide, left-justified
+    printf("\"%*s\"\n", name_length + 3, name);  // d. double quotes, 3 char wider than name
 
-	return 0;
+    return 0;
 }
