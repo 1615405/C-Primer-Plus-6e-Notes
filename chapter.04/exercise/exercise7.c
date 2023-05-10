@@ -19,8 +19,6 @@ int main(void)
 {
     double db_one_third = 1.0 / 3.0;
     float ft_one_third = 1.0 / 3.0;
-    double db_one_third = 1.0 / 3.0;
-    float ft_one_third = 1.0 / 3.0;
 
     printf("Float                Double              \n");
     printf("-------------------- --------------------\n");

@@ -26,8 +26,8 @@ int main(void)
     printf("Enter the file size (in megabytes): ");
     scanf("%f", &file_size_MB);
     printf("At %.2f megabits per second, a file of %.2f megabytes"
-	" downloads in %.2f seconds.\n", download_speed_Mps, file_size_MB,
-	file_size_MB * BITS_PER_BYTE / download_speed_Mps);
+	    " downloads in %.2f seconds.\n", download_speed_Mps, file_size_MB,
+	    file_size_MB * BITS_PER_BYTE / download_speed_Mps);
 
     return 0;
 }
