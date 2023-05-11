@@ -1,25 +1,33 @@
-/* input.c -- 何时使用& */
+/* input.c -- when to use & */
 
 #include <stdio.h>
 
 int main(void)
 {
-    int age;
-    float assets;
-    char pet[30];
+    int age;         // variables
+    float assets;    // variables
+    char pet[30];    // string
 
     printf("Enter your age, assets, and favorite pet.\n");
-    scanf("%d %f", &age, &assets);
-    scanf("%s", pet);
+    scanf("%d %f", &age, &assets);    // use the & here
+    scanf("%s", pet);                 // no & for char array
     printf("%d $%.2f %s\n", age, assets, pet);
 
     return 0;
 }
 
-/* scanf()把输入的字符串转换成整数，浮点数，字符或字符串， 而printf()把整数，浮点数，字符和字符串转换成显示在屏幕上的文本 */
-/* printf()函数使用变量，常量和表达式，而scanf()函数使用指向变量的指针 */
-
-/***
- ***对于float和double类型，printf()函数都使用 %f, %e, %E, %g, %G转换说明。而scanf()函数只把
- ***它们用于float类型，对于double类型要使用l修饰符。
- **/
+/**
+ * If you want to store that as a numerical value rather than as a string, your program has to convert the string 
+ * character-by-character to a numerical value; that is what scanf() does! It converts string input into various forms:
+ * integers, floating-point numbers, characters, and C strings. It is the inverse of printf(), which converts integers,
+ * floating-point numbers, characters, C strings to text that is to be displayed onscreen.
+ * 
+ * The printf() function use variable name, constants, and expressions. The scanf() function uses pointers to variables.
+ * 
+ * The scanf() function uses whitespace(newlines, tabs, and spaces) to decide how to divide the input into the separate
+ * fields. The only exception to this is the %c specification, which reads the very next character, even if the 
+ * character is whitespace.
+ * 
+ * The main difference is that printf() use %f, %e, %E, %g, and %G for both type float and type double, whereas scanf() 
+ * uses them just for type float, requiring the l modifier for double.
+*/
