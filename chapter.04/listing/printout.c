@@ -1,4 +1,4 @@
-/* printout.c -- 使用转换说明 */
+/* printout.c -- uses conversion specifiers */
 #include <stdio.h>
 
 #define PI 3.141593

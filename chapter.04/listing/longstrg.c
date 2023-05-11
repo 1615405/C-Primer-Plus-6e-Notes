@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     printf("Here's one way to print a ");
     printf("long string.\n");

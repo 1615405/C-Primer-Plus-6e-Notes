@@ -4,7 +4,7 @@
 #include <limits.h>  // integer limit
 #include <float.h>   // floating-point limit
 
-int main()
+int main(void)
 {
     printf("Some number limits for this system:\n");
     printf("Biggest int: %d\n", INT_MAX);

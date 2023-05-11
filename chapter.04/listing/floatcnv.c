@@ -1,7 +1,7 @@
 /* floatcnv.c -- 一些不匹配的浮点型转换 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     float n1 = 3.0;
     double n2 = 3.0;

@@ -1,7 +1,7 @@
 /* prntval.c -- print()的返回值 */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int bph2o = 212;
     int rv;

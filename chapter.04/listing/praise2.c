@@ -6,7 +6,7 @@
 
 #define PRAISE "You are an extraordinary being."
 
-int main()
+int main(void)
 {
     char name[40];
 
