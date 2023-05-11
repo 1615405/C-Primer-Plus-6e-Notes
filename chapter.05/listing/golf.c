@@ -15,5 +15,7 @@ int main(void)
 /**
  * The assignments are made right to left: First, jane gets the value 68, and then tarzan does, and finally cheeta does.
  * 
- * income = 
+ * income = salary + bribes; As a reminder, note the income, salary, and bribes all are modifiable lvalues because each
+ * identifies a data object that could be assigned a value, but the expression salary + bribes is an rvalue, a 
+ * calculated value not identified with a particular memory location.
 */
