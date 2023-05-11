@@ -1,4 +1,4 @@
-/* longstrg.c -- 打印较长的字符串 */
+/* longstrg.c -- printing long strings */
 
 #include <stdio.h>
 

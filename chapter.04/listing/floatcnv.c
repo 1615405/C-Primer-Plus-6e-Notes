@@ -1,4 +1,4 @@
-/* floatcnv.c -- 一些不匹配的浮点型转换 */
+/* floatcnv.c -- mismatched floating-point conversions */
 #include <stdio.h>
 
 int main(void)
@@ -8,7 +8,6 @@ int main(void)
     long n3 = 2000000000;
     long n4 = 1234567890;
 
-    /* float类型的值作为printf()参数时会被转换成double类型 */
     printf("%.1e %.1e %.1e %.1e\n", n1, n2, n3, n4); 
     printf("%ld %ld\n", n3, n4);
     printf("%ld %ld %ld %ld\n", n1, n2, n3, n4);
