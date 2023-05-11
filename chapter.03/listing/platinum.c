@@ -23,6 +23,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * The %f instructs scanf() to read a floating-point number from the keyboard, and the &weight tells scanf() to read
  * assign the input value to the variable named weight.

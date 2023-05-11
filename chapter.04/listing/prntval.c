@@ -1,4 +1,5 @@
 /* prntval.c -- finding printf()'s return value */
+
 #include <stdio.h>
 
 int main(void)
@@ -11,6 +12,7 @@ int main(void)
 
     return 0;
 }
+
 
 /**
  * The printf() function has a return value; it returns the number of characters it printed. note that the count

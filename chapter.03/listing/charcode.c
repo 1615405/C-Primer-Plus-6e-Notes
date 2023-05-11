@@ -13,6 +13,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * The char type is used for storing characters such as letters and punctuation marks, but technically it is an integer
  * type. The char type actually stores integers, not characters. To handle characters, the computer uses a numerical

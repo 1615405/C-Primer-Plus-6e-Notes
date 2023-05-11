@@ -19,6 +19,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * Suppose you use a %d specifier to read an integer. The scanf() function begins reading input a character at a time.
  * It skips over whitespace characters(spaces, tabs, and newlines) until it finds a non-whitespace character. Because 

@@ -14,6 +14,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * the %d notation is used to indicate just where in a line the integer is to be printed. The %d is called a
  * format specifier because it indicates the form that printf() uses to display a value. Each %d in the format string

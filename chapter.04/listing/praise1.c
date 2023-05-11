@@ -14,6 +14,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * After scanf() starts to read input, it stops reading at the first whitespace(blank, tab, newline) it encounters.
  * 

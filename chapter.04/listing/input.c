@@ -16,6 +16,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * If you want to store that as a numerical value rather than as a string, your program has to convert the string 
  * character-by-character to a numerical value; that is what scanf() does! It converts string input into various forms:
