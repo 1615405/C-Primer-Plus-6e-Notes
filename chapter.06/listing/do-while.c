@@ -18,6 +18,7 @@ int main(void)
     return 0;
 }
 
+
 /**
  * The while loop and the for loop are both entry-condition loops. The test condition is checked before each iteration 
  * of the loop, so it possible for the statements in the loop to never execute. C also has an exit-condition loop, 
