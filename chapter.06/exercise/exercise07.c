@@ -8,6 +8,7 @@
  * last character in the array.
  */
 
+
 #include <stdio.h>
 #include <string.h>
 
