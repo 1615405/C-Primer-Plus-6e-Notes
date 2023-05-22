@@ -1,0 +1,12 @@
+C programs consist of one or more functions, the basic modules of a C program.
+
+In gengral, C compilers perform some preparatory work on source code before compiling; this is termed preprocessing.
+
+For the most part, header files contain information used by the compiler to build the final executable program. For 
+example, they may define constants or indicate the names of functions and how they should be used. But the actual code 
+for a function is in a library file of precompiled code, not in a header file. The linker component of the compiler 
+takes care of finding the library code you need. In short, header files help guide the compiler in putting your program
+together correctly.
+
+In general, all C functions use braces to mark the begining as well as the end of the body of a function. Their presence 
+is mandatory.
