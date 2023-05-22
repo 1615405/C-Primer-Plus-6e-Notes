@@ -1,0 +1,24 @@
+The basic strategy in C programming is to use programs that converts your source code file to an executable file, 
+which is a file containing ready-to-run machine language code. C implementations typically do this in two steps: 
+compiling and linking. The compiler converts your source code to an intermediate code, and the linker combines this 
+with other code to produce the executable file.
+
+There are several choices for the form of the intermediate files. The most prevalent choice, and the one taken by the 
+implementations described here, is to convert the source code to machine language code, placing the result in an object
+code file, or object file for short.(This assumes that your source code consists of a single file). Although the object
+file contains machine language code, it is not ready to run. The object file contains the translation of your source 
+code, but it is not yet a complete program.
+
+The first element missing from the object code file is something called startup code, which is code that acts as an 
+interface between your program and the operating system.
+
+The second missing element is the code for library routines. Nearly all C programs make use of routines(called functions) 
+that are part of the standard C library.
+
+The role of the linker is to bring together these three elements--your object code, the standard startup code for 
+your system, and the library code--and put them together into a single file, the executable file. For library code, 
+the linker extracts only the code needed for the functions you use from the library.
+
+In short, an object file and an executable file both consist of machine language instructions. However, the object file 
+contains the machine language translation only for the code you used, but the executable file also has machine code for 
+the library routines you use and for the startup code.
