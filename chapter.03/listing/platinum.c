@@ -22,20 +22,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The %f instructs scanf() to read a floating-point number from the keyboard, and the &weight tells scanf() to read
- * assign the input value to the variable named weight.
- * 
- * Some types of data are preset before a program is used and keep their values unchanged throughout the life of the
- * program. These are constants. Other types of data may change or be assigned values as the program runs; These are
- * variables. The differences between a variable and a constant is that a variable can have its value assigned or
- * changed while the programming, and a constant can't.
- * 
- * The types created with these keywords can be divided into two families on the basic of how they are stored in the
- * computer: integer type and floating-point types.
- * 
- * Floating-point representation involves breaking up a number into a fractional part and an exponent part and storing
- * the parts separately.
-*/

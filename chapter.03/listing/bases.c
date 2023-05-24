@@ -11,8 +11,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * Note that the 0 and the 0x prefixes are not displayed in the output unless you include the # as part of the specifier
-*/
