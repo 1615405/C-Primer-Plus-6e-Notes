@@ -2,24 +2,24 @@
  * C Primer Plus Sixth Edition
  *
  * Chapter 7 Exercise 8:
- * 
+ *
  * Modify assumption a. in exercise 7 so that the program presents a menu of
  * pay rates from which to choose. Use a switch to select the pay rate. The
  * beginning of a run should look something like this:
- * 
+ *
  * *****************************************************************
  * Enter the number corresponding to the desired pay rate or action:
  * 1) $8.75/hr 							2) $9.33/hr
  * 3) $10.00/hr 						4) $11.20/hr
  * 5) quit
  * *****************************************************************
- * 
+ *
  * If choices 1 through 4 are selected, the program should request the hours
  * worked. The program should recycle until 5 is entered. If something other
  * than choices 1 through 5 is entered, the program should remind the user what
  * the proper choices are and then recycle. Use #defined constants for the
  * various earning rates and tax rates.
-*/
+ */
 
 
 #include <stdio.h>
@@ -98,7 +98,7 @@ int main(void)
 		taxes = calculate_taxes(gross_pay);
 
 		printf("For %.1f hours of work at $%.2f/hr, you make $%.2f and pay $%.2f in taxes.\n",
-		    hours, rate, gross_pay, taxes);
+			   hours, rate, gross_pay, taxes);
 		printf("\n");
 	}
 
