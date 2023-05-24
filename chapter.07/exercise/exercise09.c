@@ -1,7 +1,7 @@
 /*
- * C Primer Plus
+ * C Primer Plus Sixth Edition
  *
- * Chapter 7 Exercise 09:
+ * Chapter 7 Exercise 9:
  * 
  * Write a program that accepts a positive integer as input and then displays
  * all the prime numbers smaller than or equal to that number.
