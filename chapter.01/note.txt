@@ -1,3 +1,9 @@
+An assembly language is a mnemonic representation of the set of internal instructions used by a particular central 
+processing unit design; different CPU families have different assembly languages.
+
+The compiler is a program that translates the high-level language program into the detailed set of machine language 
+instructions the compiler requires. 
+
 The basic strategy in C programming is to use programs that converts your source code file to an executable file, 
 which is a file containing ready-to-run machine language code. C implementations typically do this in two steps: 
 compiling and linking. The compiler converts your source code to an intermediate code, and the linker combines this 
