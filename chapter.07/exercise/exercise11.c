@@ -1,4 +1,4 @@
-/*
+/**
  * C Primer Plus Sixth Edition
  *
  * Chapter 7 Exercise 11:

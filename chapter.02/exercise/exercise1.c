@@ -9,9 +9,9 @@
  * The output should look like this (but using your name):
  *
  * Gustav Mahler    <- First print statement
- * Gustav		    <- Second print statement
- * Mahler		    <- Still the second print statement
- * Gustav Mahler	<- Third and fourth print statements
+ * Gustav           <- Second print statement
+ * Mahler           <- Still the second print statement
+ * Gustav Mahler    <- Third and fourth print statements
 */
 
 
