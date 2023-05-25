@@ -49,14 +49,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * What about the break statement? It causes the program to break out of the switch and skip to the next statement after
- * the switch. Without the break statement, every statement from the matched label to the end of the switch would be 
- * processed.
- * 
- * The switch test expression in the parentheses should be one with an integer value(including type char). The case 
- * labels must be integer-type(including char) constants or integer constant expressions(expressions containing only 
- * iinteger constants).
-*/

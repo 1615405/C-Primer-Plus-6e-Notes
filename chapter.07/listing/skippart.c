@@ -37,14 +37,3 @@ int main(void)
         printf("No valid scores were entered.\n");
     return 0;
 }
-
-
-/**
- * The continue statement can be used in the three loop forms. When encountered, it causes the rest of an iteration to 
- * be skipped and the next iteration to be started. If the continue statement is inside nested structures, it affects 
- * only the innermost structure containing it.
- * 
- * You're seen that the continue statement causes the ramaining body of a loop to be skipped. For the while and do while
- * loops, the next action taken after the continue statement is to evaluate the loop test expression.
- * For a for loop, the next actions are to evaluate the update expression and then the loop test expression.
-*/

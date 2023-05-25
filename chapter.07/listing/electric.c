@@ -34,8 +34,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The rule is that an else goes with the most recent if unless braces indicate otherwise.
-*/
