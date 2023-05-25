@@ -23,18 +23,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The double quotation marks are not part of the string. They inform the compiler that they enclose a string, just as
- * single quotation marks identify a character.
- * 
- * C has no special variable type for strings. Instead, strings are stored in an array of type char. Characters in a
- * are stored in adjacent memory cells, one character per cell, and an array consists of adjacent memory locations, so
- * placing a string in an array is quite natural.
- * 
- * The \0 is the null character, and C uses it to mark the end of a string. The null character is not the digit of zero.
- * it is the nonprinting character whose ASCII code value (or equivalent) is 0. Strings in C are always stored with this
- * terminating null character. The presence of the null character means that the array must have at least one more cell
- * than the number of characters to be stored.
-*/

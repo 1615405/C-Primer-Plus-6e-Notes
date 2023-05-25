@@ -1,0 +1,32 @@
+The double quotation marks are not part of the string. They inform the compiler that they enclose a string, just as
+single quotation marks identify a character.
+
+C has no special variable type for strings. Instead, strings are stored in an array of type char. Characters in a
+are stored in adjacent memory cells, one character per cell, and an array consists of adjacent memory locations, so
+placing a string in an array is quite natural.
+
+The \0 is the null character, and C uses it to mark the end of a string. The null character is not the digit of zero.
+it is the nonprinting character whose ASCII code value (or equivalent) is 0. Strings in C are always stored with this
+terminating null character. The presence of the null character means that the array must have at least one more cell
+than the number of characters to be stored.
+
+The string constant "x" is not the same as the character constant 'x'. One difference is that 'x' is a basic type,
+but "x" is a derived type, an array of char. A second difference is that "x" really consists of two characters, 'x'
+and '\0', the null character.
+
+The printf() function has a return value; it returns the number of characters it printed. note that the count
+includes all the printed characters, including the spaces and the unseen newline character.
+
+If you want to store that as a numerical value rather than as a string, your program has to convert the string 
+character-by-character to a numerical value; that is what scanf() does! It converts string input into various forms:
+integers, floating-point numbers, characters, and C strings. It is the inverse of printf(), which converts integers,
+floating-point numbers, characters, C strings to text that is to be displayed onscreen.
+
+The printf() function use variable name, constants, and expressions. The scanf() function uses pointers to variables.
+
+The scanf() function uses whitespace(newlines, tabs, and spaces) to decide how to divide the input into the separate
+fields. The only exception to this is the %c specification, which reads the very next character, even if the 
+character is whitespace.
+
+The main difference is that printf() use %f, %e, %E, %g, and %G for both type float and type double, whereas scanf() 
+uses them just for type float, requiring the l modifier for double.

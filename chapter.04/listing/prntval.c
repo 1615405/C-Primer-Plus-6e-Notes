@@ -12,9 +12,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The printf() function has a return value; it returns the number of characters it printed. note that the count
- * includes all the printed characters, including the spaces and the unseen newline character.
-*/
