@@ -1,0 +1,35 @@
+If scanf() runs into a problem before attemping to convert the value(for example, by detecting the end of the file 
+or by encountering a handware problem), it returns the special value EOF, which typically is defined as -1.
+
+When using while, keep in mind that only the single statement, simple or compound, following the test condition is 
+part of the loop.
+
+For C, a true expression has the value 1, and a false expression has the value 0.
+
+All nonzero values are regarded as true, and only 0 is recognized as false. Alternatively, you can say that a while 
+loop executes as long as its test condition evaluates to nonzero. Keep in mind that relational expressions evaluate 
+to 1 if true and to 0 if false, so such expressions really are numeric.
+
+Furthermore, the value of an assignment statement is the value of the left side, so status = 1 has the same numerical
+value of 1. 
+
+A _Bool variable can only have a value of 1(true) or 0(false). If you try to assign a nonzero numeric value to a 
+_Bool variable, the variable is set to 1, reflecting that C considers any nonzero value to be true.
+
+C99 also provides for a stdbool.h header files. This header file makes bool an alias for _Bool and defines true and 
+false as symbolic constants for the values 1 and 0. 
+
+The for loop gathers all three actions(initializing, testing, and updating) into one place.
+
+The first expression is the initialization. It is done just once, when the for loop first starts. The second 
+expression is the test condition; it is evaluated before each potential execution of a loop. When the expression is
+false, the loop is terminated. The third expression, the change or update, is evaluated at the end of each loop.
+
+Each of the three control expressions is a full expression, so any side effects in a control expression, such as 
+incrementing a value, take place before the program evaluates another expression.
+
+The comma is a sequence point, so all side effects to the left of the comma take place before the program moves to 
+the right of the comma.
+
+The comma being a sequence point guarantees that the side effects of the left subexpression occur before the right 
+subexpression is evaluated. the value of the whole comma expression is the value of the right-hand member.

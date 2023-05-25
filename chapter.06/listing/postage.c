@@ -15,12 +15,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The comma is a sequence point, so all side effects to the left of the comma take place before the program moves to 
- * the right of the comma.
- * 
- * The comma being a sequence point guarantees that the side effects of the left subexpression occur before the right 
- * subexpression is evaluated. the value of the whole comma expression is the value of the right-hand member.
-*/

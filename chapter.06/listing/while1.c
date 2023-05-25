@@ -13,9 +13,3 @@ int main(void)
 
     return 0; 
 }
-
-
-/**
- * When using while, keep in mind that only the single statement, simple or compound, following the test condition is 
- * part of the loop.
-*/

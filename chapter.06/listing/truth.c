@@ -17,10 +17,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * All nonzero values are regarded as true, and only 0 is recognized as false. Alternatively, you can say that a while 
- * loop executes as long as its test condition evaluates to nonzero. Keep in mind that relational expressions evaluate 
- * to 1 if true and to 0 if false, so such expressions really are numeric.
-*/

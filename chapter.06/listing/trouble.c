@@ -20,9 +20,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * Furthermore, the value of an assignment statement is the value of the left side, so status = 1 has the same numerical
- * value of 1. 
-*/

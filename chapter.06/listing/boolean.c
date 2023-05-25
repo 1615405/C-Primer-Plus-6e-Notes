@@ -19,12 +19,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * A _Bool variable can only have a value of 1(true) or 0(false). If you try to assign a nonzero numeric value to a 
- * _Bool variable, the variable is set to 1, reflecting that C considers any nonzero value to be true.
- * 
- * C99 also provides for a stdbool.h header files. This header file makes bool an alias for _Bool and defines true and 
- * false as symbolic constants for the values 1 and 0. 
-*/

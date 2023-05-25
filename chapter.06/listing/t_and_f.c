@@ -12,8 +12,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * For C, a true expression has the value 1, and a false expression has the value 0.
-*/

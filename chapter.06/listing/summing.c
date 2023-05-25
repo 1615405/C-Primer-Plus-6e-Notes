@@ -20,9 +20,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * If scanf() runs into a problem before attemping to convert the value(for example, by detecting the end of the file 
- * or by encountering a handware problem), it returns the special value EOF, which typically is defined as -1.
-*/
