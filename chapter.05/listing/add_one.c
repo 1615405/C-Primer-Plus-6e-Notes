@@ -14,10 +14,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * Another advantage of the increment operator is that it usually produces slightly more efficient machine language code
- * because it is similar to actual machine language instrcutions. However, as vendors produce better C compilers, this 
- * advantage may disappear. A smart compiler can recognize that x = x + 1 can be treated the same as ++x.
-*/

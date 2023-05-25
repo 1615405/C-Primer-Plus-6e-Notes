@@ -14,3 +14,21 @@ Rvalues can be constants, variables, or any other expression that yields a value
 income = salary + bribes; As a reminder, note the income, salary, and bribes all are modifiable lvalues because each
 identifies a data object that could be assigned a value, but the expression salary + bribes is an rvalue, a 
 calculated value not identified with a particular memory location.
+
+The sizeof operator returns the size, in bytes, of its operand. A C byte is defined as the size used by the char
+type. The operand can be a specific data object, such as the name of a variable, or it can be a type. If it is a
+type, such as float, the operand must be enclosed in parentheses.
+
+C says that sizeof returns a value of type size_t;
+
+C99 goes a step further and supplies %zd as a printf() specifier for displaying a size_t value.
+
+Don't bother trying to use modules operator with floating-point numbers. It just won't work.
+
+In any case, the standard says, in effect, that if a and b are integer values, you can calculate a%b by subtracting
+(a/b)*b from a.
+-11 % 5: -11 - (-11 / 5) * 5 = -11 + 2 * 5 = -1;
+
+Another advantage of the increment operator is that it usually produces slightly more efficient machine language code
+because it is similar to actual machine language instrcutions. However, as vendors produce better C compilers, this 
+advantage may disappear. A smart compiler can recognize that x = x + 1 can be treated the same as ++x.
