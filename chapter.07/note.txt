@@ -46,4 +46,4 @@ processed.
 
 The switch test expression in the parentheses should be one with an integer value(including type char). The case 
 labels must be integer-type(including char) constants or integer constant expressions(expressions containing only 
-iinteger constants).
+integer constants).
