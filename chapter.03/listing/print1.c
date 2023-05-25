@@ -9,7 +9,7 @@ int main(void)
     printf("Doing it right: ");
     printf("%d minus %d is %d\n", ten, 2, ten - two);
     printf("Doing it wrong: ");
-    printf("%d minus %d is %d\n", ten);  // 遗漏两个参数
+    printf("%d minus %d is %d\n", ten);
     
     return 0;
 }

@@ -1,0 +1,34 @@
+The char type is used for storing characters such as letters and punctuation marks, but technically it is an integer
+type. The char type actually stores integers, not characters. To handle characters, the computer uses a numerical
+code in which certain integers represent certain characters.
+
+Note that the printf() specifiers determine how data is displayed, not how it is stored.
+
+By default, the compiler assumes floating-point constants are double precision.
+
+C enables you to override this default by using an f or F suffix to make the compiler treat a floating-point constant
+as type float; An l or L suffix makes a number type long double.If the floating-point number has no suffix, it is
+type double.
+
+The printf() function uses the %f format specifier to print type float and double numbers using decimal notation,
+and it uses %e to print them in exponential notation. Note that both float and double use the %f, %e or %a specifier
+for output. That's because C auto-matically expands type float values to type double when they are passed as 
+arguments to any function.
+
+Now c specifies that toobig gets assigned a special value that stands for infinity and that printf() displays either
+inf or infinity for the value.
+
+Including the complex.h header files lets you substitute the word complex for _Complex and the word imaginary for
+_Imaginary, and it allows you to use the symbol I to represent the square root of -1.
+
+Note that the size of char is necessarily 1 byte because C defines the size of 1 byte in terms of char. So, on a
+system a 16-bit char and a 64-bit double, sizeof will report double as having a size of 4 bytes.
+
+Incidentally, notice in the last few lines how a printf() statement can be spread over two lines. You can do this as
+long as the break does not occur in the quoted section or in the middle of a word.
+
+C has a built-in operator called sizeof that gives sizes in bytes. C99 and C11 provide a %zd specifier for this type 
+used by sizeof.
+
+C now has a function-prototyping mechanism that checks whether a function call has the correct number and correct
+kind of arguments, but it doesn't work with printf() and scanf() because they take a variable number of arguments.

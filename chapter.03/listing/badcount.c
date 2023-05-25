@@ -15,9 +15,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * C now has a function-prototyping mechanism that checks whether a function call has the correct number and correct
- * kind of arguments, but it doesn't work with printf() and scanf() because they take a variable number of arguments.
-*/

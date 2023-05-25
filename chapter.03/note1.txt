@@ -20,3 +20,13 @@ an int constant, or any other expression having an int value.
 To display an integer in octal notation instead of decimal, use %0 instead of %d. To display an integer in hexadecimal,
 use %x. If you want to display the C prefixes, you can use specifiers %#0, %#x, %#X to generate the 0, 0x, and 0X 
 prefixes respectively.
+
+Most functions take a specific number of arguments, and the compiler can check to see whether you've used the correct 
+number. However, printf() can have one, two, three, or more arguments, and that keeps the compiler from using its usual
+methods for error checking.
+
+Octal and hexadecimal constants are treated as type int unless the value is too large. Then the compiler tries
+unsigned int. If that doesn't work, it tries, in order, long, unsigned long, long long, and unsigned long long.
+
+To cause a small constant to be treated as type long, you can append an l or L as a suffix. Similarly, on those
+systems supporting the long long type, you can use ll or LL suffix to indicate a long long value.
