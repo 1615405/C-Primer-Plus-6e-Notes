@@ -32,3 +32,8 @@ used by sizeof.
 
 C now has a function-prototyping mechanism that checks whether a function call has the correct number and correct
 kind of arguments, but it doesn't work with printf() and scanf() because they take a variable number of arguments.
+
+Initially, printf() statements send output to an intermediate storage area called a buffer. Every now and then, the 
+material in the buffer is sent to the screen. The standard C rules for when output is sent from the buffer to the screen
+are clear. It is sent when the buffer gets full, when a newline character is encountered, or when there is impending 
+input.(Sending the output from the buffer to the screen or file is called flushing the buffer.)
