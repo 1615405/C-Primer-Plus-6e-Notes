@@ -28,10 +28,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The numbers used to identify the array elements are called subscripts, indices, or offsets. The subscripts must be 
- * integers, and, as mentioned, and the subscripting begins with 0. The array elements are stored next to each other 
- * in memory.
-*/

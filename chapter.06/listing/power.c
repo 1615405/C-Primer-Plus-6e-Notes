@@ -32,17 +32,3 @@ double power(double n, int p)
 
     return pow;
 }
-
-
-/**
- * Employing a function involves three sperates steps:
- *     1. Declare the function with a function prototype.
- *     2. Use the function from within a program with a function call.
- *     3. Define the function
- * 
- * The prototype allows the compiler to see whether you've used the function correctly, and the definition sets down 
- * how the function works. The prototype and definition are examples of the contemporary programming practice of 
- * separating a program element into an interface and an implementation. The interface describes how a feature is used,
- * which is what a prototype does, and the implementation sets forth the particular actions taken, which is what the 
- * definition does.
-*/
