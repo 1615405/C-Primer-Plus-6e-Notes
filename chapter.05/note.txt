@@ -1,0 +1,16 @@
+Consider an assignment statement. Its purpose is to store a value at a memory location,. Data object is a general term 
+for a region of data storage that can be used to hold values. The C standard uses just the term object for this concept.
+One way to identify an object is by using the name of a variable. But, as you will eventually learn, there are other was
+to identify an object. For example, you could specify an element of an array, a member of a structure, or use a pointer
+expression that involves the address of the object. C use the term lvalue to mean any such name or expression that 
+identifies a particular data object. Object refers to the actual data stroage, but an lvalue is a label used to 
+identify, or locate, the storage.
+
+And C added the term modifiable lvalue to identify an object whose value can be changed. Therefore, the left side of an
+assignment operator should be a modefiable lvalue.
+
+Rvalues can be constants, variables, or any other expression that yields a value, such as a function call.
+
+income = salary + bribes; As a reminder, note the income, salary, and bribes all are modifiable lvalues because each
+identifies a data object that could be assigned a value, but the expression salary + bribes is an rvalue, a 
+calculated value not identified with a particular memory location.

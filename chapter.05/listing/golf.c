@@ -1,5 +1,7 @@
 /* golf.c -- golf tournament scorecard */
 
+// The assignments are made right to left: First, jane gets the value 68, and then tarzan does, and finally cheeta does.
+
 #include <stdio.h>
 int main(void)
 {
@@ -11,12 +13,3 @@ int main(void)
 
     return 0;
 }
-
-
-/**
- * The assignments are made right to left: First, jane gets the value 68, and then tarzan does, and finally cheeta does.
- * 
- * income = salary + bribes; As a reminder, note the income, salary, and bribes all are modifiable lvalues because each
- * identifies a data object that could be assigned a value, but the expression salary + bribes is an rvalue, a 
- * calculated value not identified with a particular memory location.
-*/
