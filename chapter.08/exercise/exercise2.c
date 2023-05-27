@@ -1,5 +1,6 @@
 /**
- * C Primer Plus
+ * C Primer Plus Sixth Edition
+ * 
  * Chapter 8 Exercise 2:
  * 
  * Write a program that reads input as a stream of characters until
