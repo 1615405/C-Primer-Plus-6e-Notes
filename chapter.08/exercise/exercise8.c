@@ -57,8 +57,7 @@ int main(void)
             default:
                 printf("I do not recognize that input. Try again.");
                 break;
-            }
-        
+        }
         print_menu();
     }
     return 0;
