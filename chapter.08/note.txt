@@ -1,0 +1,39 @@
+The immediate echoing of input characters is an instance of unbuffered(or direct) input, meaning that the characters you
+type are immediately made available to the waiting program. The delayed echoing, on the other hand, illustrates buffered
+input, in which the characters you type are collected and stored in an area of temporary storage called a buffer.
+
+Buffering comes in two varieties: fully buffered I/O and line-buffered I/O. For fully buffered input, the buffer is 
+flushed(the contents are sent to their destination) when it is full. This kind of buffering usually occurs with file 
+input. The buffer size depends on the system, but 512 bytes and 4096 bytes are common values. With line-buffered I/O,
+the buffer is flushed whenever a newline character show up. Keyboard input is normally line buffered, so that pressing
+Enter flushes the buffer.
+
+A file is an area of memory in which information is stored. A stream is an idealized flow of data to which the actual 
+input or output is mapped.
+
+Keyboard input is represented by a stream called stdin, and output to the screen (or teletype or other output device) is
+represented by a stream called stdout.
+
+C handle this variety of methods by having the getchar() function return a spacial value when the end of a file is 
+reached, regardless of how the operating system actually detects the end of file. The name given to this value is EOF.
+Therefore, the return value for getchar() when it detects an end of file is EOF. The scanf() function also returns EOF
+on detecting the end of a file.
+
+By default, a C program using the standard I/O package looks to the standard input as its source for input. This is the
+stream identified earlier as stdin.
+
+A redirection operator connects an executable program (including standard operating system commands) with a data file.
+It cannot be used to connect one data file to another, nor can it be used to connect one program to another program.
+
+Input cannot be taken from more than one file, nor can output be directed to more than one file by using redirection 
+operators.
+
+Many programs use getchar() to read input character-by-character. Typically, system use line-buffered input, meaning 
+that input is transmitted to the program when you press Enter. Pressing Enter also transmits a newline character that 
+may require programming attention.
+
+C features a family of functions, called the standard I/O packages, that treats different file forms on different 
+systems in a uniform manner.
+
+Interspersing calls to getchar() with calls to scanf() can cause problems when scanf() leaves a newline character in the
+input before a call to getchar().
