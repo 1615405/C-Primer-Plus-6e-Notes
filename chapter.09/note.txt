@@ -1,0 +1,27 @@
+A function prototype that tells the compiler what sort of function is, a function call that causes the function to be 
+executed, and a function definition that specifies exactly what the function does.
+
+Functions should be declared by type. A function with a return value should be declared the same type as the return 
+value. Functions with no return value should be declared as type void.
+
+A function declaration informs the compiler which type the function is, but the function definition supples the actual
+code.
+
+The reason for the prototype is to show the compiler how the function should be used before the compiler reaches the 
+first actual use. You can accomplish the same end by placing the entire function definition before the first use.
+Then the definition acts as its own prototype. 
+
+C permits a function to call itself. This process is termed recursion. Recursion often can be used where loops can be 
+used. Sometimes the loop solution is more obvious; sometimes the recursive solution is more obvious. Recursive solutions
+tend to be more elegant and less efficient than loop solutions.
+
+The unary & operator gives you the address where a variable is stored. If pooh is the name of a variable, &pooh is the 
+address of the variable.
+
+Basically, a pointer is a variable(or, more generally, a data object) whose value is a memory address.
+
+When followed by a pointer name or an address, * gives the value stored at the pointed-to address.
+
+When you write a program, you can think of a variable as having two attributes: a name and a value. After the program 
+has been compiled and loaded, the computer also thinks of the same variable as having two attributes: an address and 
+a value. An address is the computer's version of a name.
