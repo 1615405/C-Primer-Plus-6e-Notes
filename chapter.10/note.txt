@@ -1,0 +1,51 @@
+That is, if you don't initialize an array at all, its elements, like uninitialized ordinary variables, get garbage 
+values, but if you partially initialize an array, the remaining elements are set to 0.
+
+When you use empty brackets to initialize an array, the compiler counts the number of items in the list and makes the 
+array that large.
+
+Name of array is the address of the first element.
+
+The value of a pointer is the address of the object to which it points. Applying the * operator to a pointer yields the 
+value stored in the pointed-to object. Adding 1 to the pointer increases its value by the size, in bytes, of the 
+pointed-to type.
+
+Therefore, before you use a pointer, it should be assigned a memory location that has already been allocated.
+
+If a function's intent is that it not change the contents of the array, use the keyword const when declaring the formal
+parameter in the prototype and in the function definition.
+
+It's valid to assign the address of either constant data or non-constant data to a pointer-to-constant.
+Only the address of non-constant data can be assigned to regular pointers. Otherwise, you could use the pointer to 
+change data that was supposed to be constant.
+
+Using const in a function parameter definition not only protects data, it also allows the function to work with arrays
+that have been declared const.
+
+********************************************************************
+double rate[5] = {88.99, 100.12, 59.45, 183.11, 340.5};
+const double locked[4] = {0.08, 0.075, 0.0725, 0.07};
+const double *pc = rates;  // valid
+pc = locked                // valid
+pc = &rates[3]             // valid
+
+
+double rate[5] = {88.99, 100.12, 59.45, 183.11, 340.5};
+const double locked[4] = {0.08, 0.075, 0.0725, 0.07};
+double *pnc = rates;    // valid
+pnc = locked;           // not valid
+pnc = &rates[3];        // valid
+
+
+double rates[5] = {88.99, 100.12, 59.45, 183.11, 340.5};
+double * const pc = rates
+pc = &rates[2];    // not valid
+*pc = 92.99;       // valid
+
+
+double rate[5] = {88.99, 100.12, 59.45, 183.11, 340.5};
+const double * const pc = rates;
+pc = &rates[2]  // not allowed
+*pc = 92.99     // not allowed
+*************************************************************************
+zippo[m][n] == *(*(zippo + m) + n)  pz[m][n] == *(*(pz + m) + n)
