@@ -49,3 +49,18 @@ pc = &rates[2]  // not allowed
 *pc = 92.99     // not allowed
 *************************************************************************
 zippo[m][n] == *(*(zippo + m) + n)  pz[m][n] == *(*(pz + m) + n)
+
+int zippo[4][2]
+
+Adding 1 to a pointer or address yields a value larger by the size of the refered-to object. In this respect, zippo and 
+zippo[0] differ, because zippo offers to an object two ints in size, and zippo[0] refers to an object one int in size.
+Therefore, zippo + 1 has a different value from zippo[0] + 1;
+
+Dereferencing a pointer or an address (applying the * operator or else the [] operator with an index) yields the value 
+represented by the refered-to object. Because zippo[0] is the address of its first element, (zippo[0][0]), *(zippo[0])
+represents the value stored in zippo[0][0], an int value.
+
+Similarly, *zippo represents the value of its first element, zippo[0], but zippo[0] itself is the address of an int.
+It's the address &zippo[0][0], so *zippo is &zippo[0][0]. Applying the dereferencing operator to both expressions 
+implies that **zippo equals *&zippo[0][0], which reduces to zippo[0][0], an int. In short, zippo is the address of an 
+address and must be dereferenced twice to get an ordinary value.
