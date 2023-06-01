@@ -33,3 +33,27 @@ the right of the comma.
 
 The comma being a sequence point guarantees that the side effects of the left subexpression occur before the right 
 subexpression is evaluated. the value of the whole comma expression is the value of the right-hand member.
+
+The while loop and the for loop are both entry-condition loops. The test condition is checked before each iteration 
+of the loop, so it possible for the statements in the loop to never execute. C also has an exit-condition loop, 
+in which the condition is checked after each iteration of the loop, guaranteeing that statements are executed at 
+least once. This variety is called a do while loop.
+
+A do while loop is always executed at least once because the test is made after the body of the loop has been 
+executed. A for loop or a while loop, on the other hand, can be executed zero times because the test is made before
+execution.
+
+The numbers used to identify the array elements are called subscripts, indices, or offsets. The subscripts must be 
+integers, and, as mentioned, and the subscripting begins with 0. The array elements are stored next to each other 
+in memory.
+
+Employing a function involves three sperates steps:
+    1. Declare the function with a function prototype.
+    2. Use the function from within a program with a function call.
+    3. Define the function
+
+The prototype allows the compiler to see whether you've used the function correctly, and the definition sets down 
+how the function works. The prototype and definition are examples of the contemporary programming practice of 
+separating a program element into an interface and an implementation. The interface describes how a feature is used,
+which is what a prototype does, and the implementation sets forth the particular actions taken, which is what the 
+definition does.
