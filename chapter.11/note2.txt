@@ -2,4 +2,6 @@ Note that gets() discards a newline on input, but puts() adds a newline on outpu
 newline on input, and fputs() doesn't add a newline on output. The point is that puts() is designed to work with gets(),
 and fputs() is designed to work with fgets().
 
-+
+The ANSI standard says the strcmp() returns a negative number if the first string comes before the second alphabetcially,
+returns 0 if they are the same, and returns a positive number if the first string follows the second alphabetcially.
+
