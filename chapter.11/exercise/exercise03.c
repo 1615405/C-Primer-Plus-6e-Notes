@@ -1,0 +1,57 @@
+/**
+ * C Primer Plus Sixth Edition
+ * 
+ * Chapter 11 Exercise 3:
+ * 
+ * Design and test a function that reads the first word from a line of input
+ * into an array and discards the rest of the line. It should skip over leading
+ * whitespace. Define a word as a sequence of characters with no blanks, tabs,
+ * or newlines in it. 
+*/
+
+
+#include <stdio.h>
+#include <ctype.h>
+#include <stdbool.h>
+
+#define SIZE 20
+
+char *getword(char *target);
+
+int main(void)
+{
+    char hello[SIZE] = "Hello, ";
+    getword(hello + 7);
+    puts(hello);
+
+    return 0;
+}
+
+char *getword(char *target)
+{
+    char ch;
+    int i = 0;
+    bool inword = false;
+
+    while ((ch = getchar()) != EOF) {
+        if (isspace(ch)) {
+            if (inword) {
+                break;
+            } else {
+                continue;
+            }
+        }
+
+        if (!inword) {
+            inword = true;
+        }
+        *(target + i) = ch;
+        i++;
+    }
+
+    while ((ch = getchar()) != '\n') {
+        continue;
+    }
+
+    return target;
+}
