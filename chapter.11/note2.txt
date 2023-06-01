@@ -1,0 +1,5 @@
+Note that gets() discards a newline on input, but puts() adds a newline on output. On the other hand, fgets() stores the
+newline on input, and fputs() doesn't add a newline on output. The point is that puts() is designed to work with gets(),
+and fputs() is designed to work with fgets().
+
++
