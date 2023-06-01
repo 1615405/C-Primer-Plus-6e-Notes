@@ -1,0 +1,43 @@
+The puts() function, like printf(), belongs to the stdio.h family of input/output function. It only displays strings, 
+and, unlike printf(), it automaticlly appends a newline to the string it displays.
+
+A string literal, also termed a string constant, is anything enclosed in double quotation marks. The enclosed 
+characters, plus a terminating \0 character automaticlly provided by the compiler, are stored in memory as a 
+character string.
+
+Character string constant are placed in the static storage class, which means that if you use a string constant in a 
+function, the string is stored just once and lasts for the duration of the program, even if the function is called 
+several times.
+
+Note the closing null character. Without it, you have a character array, but not a string.
+
+When you specify the array size, be sure that the number of elements is at least one more (that null character again) 
+than the string length. Any unused elements are automaticlly initialized to 0(Which in char form is the null character,
+not the zero digit character).
+
+In short, initializing the array copies a string from static storage to the array, whereas initializing the pointer
+merely copies the address of the string.
+
+******* char heart[] = "I love Tillie!"   const char *head = "I love Tillie!" *****
+The chief difference is that the array name heart is a constant, but the pointer head is a variable.
+
+The increment operator can be used only with the names of variables (or, more generally, modifiable lvalues), not with 
+constants.
+
+Therefore, the recommended practice for initializing a pointer to a string literal is to use the const modifier.
+
+If you want to use an array to represent a bunch of strings to be displayed, an array of pointers is more efficient than
+an array of character arrays.
+
+The gets() function reads an enter line up through the newline character, discards the newline character, stores the 
+remaining characters, adding a null character to create a C string. It's often paired with puts(), which displays a 
+string, adding a newline.
+
+Thus gets() only knows where the array begins, not how many elements it has.
+
+The fgets() function meets the possible overflow problem by taking s second argument that limits the number of characters
+to be read. This function is designed for the input.
+    It takes a second argument indicating the maximum number of characters to read. If this argument has the value n, 
+fgets() reads up to n-1 characters or through the newline character, whichever comes first.
+    If fgets() reads the newline, it stores it in the string.
+    It takes a third argument indicating which file to read. To read from the keyboard, use stdin.
