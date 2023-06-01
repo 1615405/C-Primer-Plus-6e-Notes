@@ -26,9 +26,7 @@ int main(void)
     scanf("%d", &days);
 
     while (days > 0) {
-        printf("%d days are %d week(s), %d day(s).\n", days,
-            days / DAYS_PER_WEEK, days % DAYS_PER_WEEK);
-        
+        printf("%d days are %d week(s), %d day(s).\n", days, days / DAYS_PER_WEEK, days % DAYS_PER_WEEK);
         printf("Enter a number of days (or enter 0 to quit): ");
         scanf("%d", &days);
     }

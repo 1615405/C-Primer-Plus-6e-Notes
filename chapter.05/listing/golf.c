@@ -1,7 +1,5 @@
 /* golf.c -- golf tournament scorecard */
 
-// The assignments are made right to left: First, jane gets the value 68, and then tarzan does, and finally cheeta does.
-
 #include <stdio.h>
 int main(void)
 {

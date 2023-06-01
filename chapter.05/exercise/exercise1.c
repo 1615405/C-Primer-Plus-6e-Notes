@@ -23,9 +23,7 @@ int main(void)
 
     while (minutes > 0) {
         printf("%d minute(s) is %d hour(s) and %d minute(s)\n",
-            minutes, 
-            minutes / MINUTES_PER_HOUR, 
-            minutes % MINUTES_PER_HOUR);
+            minutes, minutes / MINUTES_PER_HOUR, minutes % MINUTES_PER_HOUR);
         
         printf("Enter an amount of time in minutes: ");
         scanf("%d", &minutes);

@@ -2,18 +2,18 @@
 
 #include <stdio.h>
 
-int main(void)                      /* finds sum of first 20 integers */
+int main(void)
 {
-    int count, sum;                 /* declaration statement          */
+    int count, sum;
 
-    count = 0;                      /* assignment statement           */
-    sum = 0;                        /* ditto                          */
+    count = 0;
+    sum = 0;
 
-    while (count++ < 20) {          /* while                          */
-        sum = sum + count;          /*             statement          */
+    while (count++ < 20) {
+        sum = sum + count;
     }
 
-    printf("sum = %d\n", sum);      /* function statement             */
+    printf("sum = %d\n", sum);
 
-    return 0;                       /* return statement               */
+    return 0;
 }
