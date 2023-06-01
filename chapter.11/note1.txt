@@ -37,7 +37,12 @@ Thus gets() only knows where the array begins, not how many elements it has.
 
 The fgets() function meets the possible overflow problem by taking s second argument that limits the number of characters
 to be read. This function is designed for the input.
-    It takes a second argument indicating the maximum number of characters to read. If this argument has the value n, 
+    1. It takes a second argument indicating the maximum number of characters to read. If this argument has the value n, 
 fgets() reads up to n-1 characters or through the newline character, whichever comes first.
-    If fgets() reads the newline, it stores it in the string.
-    It takes a third argument indicating which file to read. To read from the keyboard, use stdin.
+    2. If fgets() reads the newline, it stores it in the string.
+    3. It takes a third argument indicating which file to read. To read from the keyboard, use stdin.
+
+The fgets() function returns a pointer to char. If all goes well, it just returns the same address that was passed to it
+as the first argument. If the function encounters end-of-file, however, it returns a special pointer called the null 
+pointer. This is a pointer guaranteed not to point to valid data so it can be used to indicate a spacial case. In code
+it can be represented by the digit 0 or, more commly in C, by the marco NULL.
