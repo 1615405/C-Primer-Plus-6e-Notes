@@ -16,11 +16,11 @@ int main(void)
     int i; // array index
 
     printf("Enter 8 integers:\n");
-    for (i = 0; i < 8; i++) // read ints into array
+    for (i = 0; i < 8; i++)
     {
         scanf("%d", &int_array[i]);
     }
-    for (i--; i >= 0; i--) // decrement i to 7 to initialize loop
+    for (i--; i >= 0; i--)
     {
         printf("%d", int_array[i]);
     }

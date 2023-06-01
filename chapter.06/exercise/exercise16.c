@@ -21,16 +21,13 @@ int main(void)
     const float DEIRDE_INTEREST = 0.05f;
     const float DAPHNE_INTEREST = 0.10f;
 
-    // initialize years and balances
     int years = 0;
     float daphne_balance = DAPHNE_PRINCIPLE;
     float deirdre_balance = DEIRDE_PRINCIPLE;
 
     while (deirdre_balance <= daphne_balance)
     {
-        // eq. for compound interest
         deirdre_balance *= 1.0f + DEIRDE_INTEREST;
-        // eq. for simple interest
         daphne_balance += DAPHNE_PRINCIPLE * DAPHNE_INTEREST;
         years++;
     }

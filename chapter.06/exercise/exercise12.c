@@ -30,13 +30,11 @@ int main(void)
     {
         series1 += 1.0f / i;
         series2 += (1.0f / i) * sign;
-        sign = -sign; // toggle sign
+        sign = -sign;
     }
 
     printf("The %ldth partial sum for series 1 is: %.5f\n", limit, series1);
     printf("The %ldth partial sum for series 2 is: %.5f\n", limit, series2);
-
-    // Answer: Series 1 has no limit. Series 2 appears to be bounded above
 
     return 0;
 }

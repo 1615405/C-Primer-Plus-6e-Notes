@@ -6,8 +6,8 @@ int main(void)
 {
     int true_val, false_val;
 
-    true_val = (10 > 2);        // value of a true ralationship
-    false_val = (10 == 2);      // value of a false relationship
+    true_val = (10 > 2); 
+    false_val = (10 == 2);
     printf("true = %d; false = %d \n", true_val, false_val);
 
     return 0;

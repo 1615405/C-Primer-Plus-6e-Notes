@@ -22,9 +22,9 @@ int main(void)
         printf("Enter lower and upper integer limits (in that order): ");
         reads = scanf("%ld%ld", &lower, &upper);
         if (reads != 2) {
-            while (getchar() != '\n'); // if read fails, clear input buffer
+            while (getchar() != '\n');
         }
-    } while (lower > upper); // if lower is greater than upper, get new input
+    } while (lower > upper);
 
     printf("\n");
     // table header

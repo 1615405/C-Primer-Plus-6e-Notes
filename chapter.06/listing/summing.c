@@ -5,13 +5,13 @@
 int main(void)
 {
     long num;
-    long sum = 0L;    /* initialize sum to zero */
+    long sum = 0L;
     int status;
 
     printf("Please rnter an integer to be summed ");
     printf("(q to quit): ");
     status = scanf("%ld", &num);
-    while (status == 1) {     /* == meaning "is equal to" */
+    while (status == 1) {
         sum = sum + num;
         printf("Please enter next integer (q to quit): ");
         status = scanf("%ld", &num);

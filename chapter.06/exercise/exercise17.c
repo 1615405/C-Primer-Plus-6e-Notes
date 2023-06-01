@@ -21,9 +21,6 @@ int main(void)
     int years = 0;
     float balance = WINNINGS;
 
-    // the problem is not quite clear, but I'm assuming
-    // Chuckie makes his first withdrawal before collecting
-    // any interest
     while (balance > 0)
     {
         balance -= SPENDING;

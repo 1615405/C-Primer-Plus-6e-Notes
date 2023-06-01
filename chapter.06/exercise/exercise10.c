@@ -39,7 +39,7 @@ int main(void)
     return 0;
 }
 
-int sum_of_squares(int lower, int upper) // calculate sum of squares from lower to upper
+int sum_of_squares(int lower, int upper)
 {
     int sum = 0;
 
