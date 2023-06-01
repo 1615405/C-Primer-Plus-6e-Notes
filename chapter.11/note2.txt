@@ -5,3 +5,5 @@ and fputs() is designed to work with fgets().
 The ANSI standard says the strcmp() returns a negative number if the first string comes before the second alphabetcially,
 returns 0 if they are the same, and returns a positive number if the first string follows the second alphabetcially.
 
+Remember, declaring an array allocates storage space for data; declaring a pointer only allocates storage space for one
+address.
