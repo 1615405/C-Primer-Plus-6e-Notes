@@ -1,7 +1,7 @@
 /* altname.c -- portable names for integer types */
 
 #include <stdio.h>
-#include <stdint.h>     // support portable types
+#include <stdint.h>
 #include <inttypes.h>
 
 int main(void)

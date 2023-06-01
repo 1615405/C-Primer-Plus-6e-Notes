@@ -31,7 +31,6 @@ int main(void)
     printf("Enter the amount of gas consumed in gallons: ");
     scanf("%f", &gallons_gas_consumed);
 
-    // calculate miles per gallon and liters per km
     miles_per_gallon = miles_travelled / gallons_gas_consumed;
     liters_per_100km = 100. / miles_per_gallon * LT_PER_GALLON / KM_PER_MILE;
 

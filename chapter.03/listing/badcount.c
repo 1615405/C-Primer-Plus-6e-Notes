@@ -9,9 +9,9 @@ int main(void)
     float f = 7.0f;
     float g = 8.0f;
 
-    printf("%d\n", n, m);    /* too many arguments   */
-    printf("%d %d %d\n", n); /* too few arguments    */
-    printf("%d %d\n", f, g); /*  wrong kind of value */
+    printf("%d\n", n, m);
+    printf("%d %d %d\n", n);
+    printf("%d %d\n", f, g);
 
     return 0;
 }
