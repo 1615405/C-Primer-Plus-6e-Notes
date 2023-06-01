@@ -60,10 +60,10 @@ int main(void)
                 break;
             case 'q':
                 printf("Bye.\n");
-                return 0; // exit program
-            default:      // invalid input
+                return 0;
+            default:      
                 printf("Invalid input. Try again.\n\n");
-                continue; // repeat main program loop
+                continue;
         }
 
         printf("Enter number of hours worked in a week: ");

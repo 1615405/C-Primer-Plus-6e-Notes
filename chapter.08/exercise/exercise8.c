@@ -92,7 +92,7 @@ float get_number(void)
 
     while (scanf("%f", &num) != 1)
     {
-        while ((ch = getchar()) != '\n') // echo user input and clear stream
+        while ((ch = getchar()) != '\n')
             putchar(ch);
 
         printf(" is not a number.\n");
