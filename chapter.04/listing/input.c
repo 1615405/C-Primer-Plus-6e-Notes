@@ -4,13 +4,13 @@
 
 int main(void)
 {
-    int age;         // variables
-    float assets;    // variables
-    char pet[30];    // string
+    int age;
+    float assets;
+    char pet[30];
 
     printf("Enter your age, assets, and favorite pet.\n");
-    scanf("%d %f", &age, &assets);    // use the & here
-    scanf("%s", pet);                 // no & for char array
+    scanf("%d %f", &age, &assets);
+    scanf("%s", pet);
     printf("%d $%.2f %s\n", age, assets, pet);
 
     return 0;

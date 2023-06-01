@@ -1,7 +1,7 @@
 /* praise2.c */
 
 #include <stdio.h>
-#include <string.h>      /* provide strlen() prototype */
+#include <string.h>
 
 #define PRAISE "You are an extraordinary being."
 

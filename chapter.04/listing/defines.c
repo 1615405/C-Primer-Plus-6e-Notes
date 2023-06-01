@@ -1,8 +1,8 @@
 /* defines.c -- uses defined constants from limit.h and float. */
 
 #include <stdio.h>
-#include <limits.h>  // integer limit
-#include <float.h>   // floating-point limit
+#include <limits.h>
+#include <float.h>
 
 int main(void)
 {

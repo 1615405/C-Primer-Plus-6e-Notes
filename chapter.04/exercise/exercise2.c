@@ -22,10 +22,10 @@ int main(void)
     printf("Enter your first name: ");
     scanf("%s", name);
     name_length = strlen(name);
-    printf("\"%s\"\n", name);                       // a. enclosed in double quotes
-    printf("\"%20s\"\n", name);                     // b. double quotes, 20 char wide, right-justified
-    printf("\"%-20s\"\n", name);                    // c. double quotes, 20 char wide, left-justified
-    printf("\"%*s\"\n", name_length + 3, name);     // d. double quotes, 3 char wider than name
+    printf("\"%s\"\n", name);
+    printf("\"%20s\"\n", name);
+    printf("\"%-20s\"\n", name); 
+    printf("\"%*s\"\n", name_length + 3, name); 
 
     return 0;
 }
