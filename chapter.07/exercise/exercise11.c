@@ -57,9 +57,9 @@ int main(void)
         {
             case 'q':
                 printf("Bye.\n");
-                return 0; // exit program
+                return 0;
 
-            case 'a': // artichokes
+            case 'a': 
                 printf("How many pounds of artichokes would you like to add? ");
                 if (scanf("%f", &weight) == 1)
                     artichoke_weight += weight;
@@ -67,11 +67,11 @@ int main(void)
                 {
                     flush_input_buffer();
                     printf("Invalid input. Try again.\n");
-                    continue; // repeat main program loop
+                    continue; 
                 }
                 break;
 
-            case 'b': // beets
+            case 'b': 
                 printf("How many pounds of beets would you like to add? ");
                 if (scanf("%f", &weight) == 1)
                     beet_weight += weight;
@@ -79,11 +79,11 @@ int main(void)
                 {
                     flush_input_buffer();
                     printf("Invalid input. Try again.\n");
-                    continue; // repeat main program loop
+                    continue; 
                 }
                 break;
 
-            case 'c': // carrots
+            case 'c': 
                 printf("How many pounds of carrots would you like to add? ");
                 if (scanf("%f", &weight) == 1)
                     carrot_weight += weight;
@@ -91,22 +91,20 @@ int main(void)
                 {
                     flush_input_buffer();
                     printf("Invalid input. Try again.\n");
-                    continue; // repeat main program loop
+                    continue; 
                 }
                 break;
 
             default:
                 printf("Invalid input. Try again.\n");
-                continue; // repeat main program loop
+                continue;
         }
 
-        // calculate subtotal
         artichoke_price = artichoke_weight * ARTICHOKE_PRICE_PER_LB;
         beet_price = beet_weight * BEET_PRICE_PER_LB;
         carrot_price = carrot_weight * CARROT_PRICE_PER_LB;
         subtotal = artichoke_price + beet_price + carrot_price;
 
-        // calculate discount
         if (subtotal >= 100)
         {
             discount_flag = true;
@@ -115,11 +113,9 @@ int main(void)
         else
             discount_flag = false;
 
-        // calculate shipping
         total_weight = artichoke_weight + beet_weight + carrot_weight;
         shipping = calculate_shipping(total_weight);
 
-        // grand total
         total = subtotal + shipping - (discount_flag ? discount : 0.0);
 
         printf("\n");

@@ -1,21 +1,21 @@
 /* cypher1.c -- alters input, preserving spaces */
 
 #include <stdio.h>
-#define SPACE ' '                // that's quote-space-quote
+#define SPACE ' '
 
 int main(void)
 {
     char ch;
 
-    ch = getchar();              // leave the space
-    while ((ch == getchar()) != '\n')           // while not end of line
+    ch = getchar();              
+    while ((ch == getchar()) != '\n')           
     {
-        if (ch == SPACE)         // leave the space
-            putchar(ch);         // character unchanged
+        if (ch == SPACE)         
+            putchar(ch);         
         else
-            putchar(ch + 1);     // change other characters
+            putchar(ch + 1);     
     } 
-    putchar(ch);                 // print the newline
+    putchar(ch);                
 
     return 0;
 }

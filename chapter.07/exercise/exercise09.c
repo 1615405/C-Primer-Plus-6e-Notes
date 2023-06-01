@@ -28,12 +28,12 @@ int main(void)
     for (int i = 2; i <= limit; i++)
     {
         prime_flag = true;
-        for (int j = 2; j < i; j++) // for all j less than i ...
+        for (int j = 2; j < i; j++)
         {
-            if (i % j == 0) // if i is divisible by j ...
+            if (i % j == 0)
             {
-                prime_flag = false; // then i is not prime
-                break; // break out of inner loop
+                prime_flag = false;
+                break;
             }
         }
         if (prime_flag)
