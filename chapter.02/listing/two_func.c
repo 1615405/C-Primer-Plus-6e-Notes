@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void butler(void);  /* ANSI/ISO C fuinction prototyping */
+void butler(void);
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
     return 0;
 }
 
-void butler(void)   /* start of function definition */
+void butler(void)
 {
     printf("You rang, sir?\n");
 }
