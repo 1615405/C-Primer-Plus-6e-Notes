@@ -1,0 +1,52 @@
+The auto specifier indicates a variable with automatic storage duration. It can be used only in declarations of 
+variables with block scope, which already have automatic storage duration, so its main use is documenting intent.
+
+The register specifier also can be used only with variables of block scope. It puts a variable into the register storage
+class, which amounts to a request to minimize the access time for that variable. It also prevents you from taking the 
+address of the variable.
+
+The static specifier creates an object with static duration, one that's created when the program is loaded and ends when
+the program terminates. If static is used with a file scope declaration, scope is limited to that one file. If static is
+used with a block scope declaration, scope is limited to that block. Thus, the object exists and retains its value as 
+long as the program is running, but it can be accessed by the identifier only when code within the block is being 
+executed. A static variable with block scope has no linkage. A static variable with file scope has internal linkage.
+
+The extern specifier indicates that you are declaring a variable that has been defined elsewhere. If the declaration 
+containing extern has file scope, the variable referred to must have external linkage. If the declaration containing 
+extern has block scope, the referred-to variable can have either external linkage or internal linkage, depending on the 
+defining declaration for that variable.
+
+An external function can be accessed by functions in other files, but a static function can be used only within the 
+defining file.
+
+One of the golden rules of protective programming is the "need to know" principle. Keep the inner workings of each 
+function as private to that function as possible, sharing only those variables that need to be shared.
+
+The amount of static memory is fixed at compile time: it does not change while the program is running. The amount of 
+memory used for automatic variables grows and shrinks automatically as the program executes. But the amount of memory 
+used for allocated memory just grows unless you remember to use free().
+
+You can think of a program as dividing its available memory into three separate sections: one for static variables with
+external linkage, internal linkage, and no linkage; one for automatic variables; and one for dynamically allocated memory.
+
+The amount of memory needed for the static duration classes is knowen at compile time, and the data stored in this 
+section is available as long as the program runs. Each variable of these classes comes into being when the program
+starts and expires when the program ends.
+
+An automatic variable, however, comes into existence when a program enters the block of code containing the variable's 
+definition and expires when its block of code exited. Therefore, as a program calls functions and as functions terminate,
+the amount of memory used by automatic variables grows and shrinks. This section of memory is typically handled as a stack.
+
+Dynamically allocated memory comes into existence when malloc() or a related function is called, and it's freed when 
+free() is called. Using dynamic memory tends to be a slower process than using stack memory.
+
+In short, a const anywhere to the left of the * makes the data constant; and a const to the right of the * makes the 
+pointer itself constant.
+
+The second approach is to place the constants in an include file. Here, you must take the additional step of using the 
+static external storage class.
+
+The restrict keyword enhances computational support by giving the compiler permission to optimize certain kinds of code.
+It can be applied only to pointers, and it indicates that a pointers is the sole initial means of accessing a data object.
+
+While a thread performs an atomic operation on an object atomic type, other threads won't access that object.

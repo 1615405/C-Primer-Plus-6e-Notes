@@ -1,0 +1,70 @@
+C's memory management system exemplifies that control by letting you determine which functions know which variables and 
+for how long a variable persists in a program.
+
+You can describe an object in terms of its storage duration, which is how long it stays in memory. You can describe an 
+identifier used to access the object by its scope and its linkage, which together indicate which parts of a program can
+use it. The different storage classes offer different combinations of scope, linkage, and storage duration.
+
+Scope describes the region or regions of a program that can access an identifier. A C variable has one of the following
+scope: block scope, function scope, function prototype scope, or file scope.
+
+Variables declared in an inner bolck have scope restricted just to that bolck.
+
+Function prototype scope runs from the point the variable is defined to the end of the prototype declaration. What this 
+means is that all the compiler cares about when handing a function prototype argument is the types.
+
+A variable with its definition placed outside of any function has file scope. A variable with file scope is visible from
+the point it is defined to the end of the file containing the definition. Because they can be used in more than one 
+function, file scope variables are also called global variables.
+
+Thus the compiler sees a single file containing information from your source code file and all the header files. This 
+single file is called a translation unit.
+
+A C variable has one of the following linkages: external linkage, internal linkage, or no linkage. Variables with block
+scope, function scope, or function prototype scpe have no linkage. That means they are private to the bolck, function, 
+or prototype in which they are defined. A variable with file scope can have either internal or external linkage. A 
+variable with external linkage can be used anywhere in a multifile program. A variable with internal linkage can be used
+anywhere in a single translation unit.
+
+Scope and linkage describe the visibility of identifiers. Storage duration describes the persistence of the objects 
+accessed by these identifiers. A C object has one of the following four storage durations: static duration, thread 
+duration, automatic storage duration, or allocated storage duration.
+
+If an object has static storage duration, it exists throughout program execution. Variables with file scope have static
+storage duration.
+
+Thread storage duration comes into play in concurrent programming, in which program execution can be divided into 
+multiple threads. An object with thread storage duration exists from when it's declared until the thread terminates.
+
+Variables with block scope normally have automatic storage duration. These variables have memory allocated for them when
+the program enters the bolck in which they are defined, and the memory is freed when the bolck is exited.
+
+Variable-length arrays provide a slight exception in that they exist from the point of declaration to the end of the 
+block rather than from the beginning of the block to the end.
+
+Five storage classes: automatic, register, static with block scope, static with external linkage, and static with 
+internal linkage.
+
+A variable belonging to the automatic storage class has automatic storage duration, block scope, and no linkage.
+
+More completely, an entire loop is a sub-block to the block containing it, and the loop body is a sub-block to the entire
+loop block.
+
+Static variables are initialized to zero if you don't explicitly initialize them to some other value.
+
+Static variables and external variables are already in place after a program is loaded into memory. You can't use static
+for function parameters.
+
+A static variable with external linkage has file scope, external linkage, and static storage duration. This class is 
+sometimes termed the external storage class, and variables of this type are called external variables.
+
+In short, a variable in block scope "hides" a variable of the same name in file scope while the program executes 
+statements in the block.
+
+Don't use the keyword extern to create an external definition; use it only to refer to an existing external definition.
+An external variable can be initialized only once, and that must occur when the variable is defined.
+
+Complex C programs often use several separate files of source code. Sometimes these files might need to share an 
+external variable. The C way to do this is to have a defining declaration in one file and referencing declaration in the
+other files. That is, all but one declaration (the defining declaration) should use the extern keyword, and only the 
+defining declaration should be used to initialize the variable.
