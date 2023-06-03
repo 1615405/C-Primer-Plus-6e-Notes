@@ -1,18 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 6 Exercise 3:
- * 
- * Use nested loops to produce the following pattern:
- * F
- * FE
- * FED
- * FEDC
- * FEDCB
- * FEDCBA
-*/
-
-
 #include <stdio.h>
 
 int main(void)

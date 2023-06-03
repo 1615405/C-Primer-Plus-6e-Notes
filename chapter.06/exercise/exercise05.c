@@ -1,20 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 6 Exercise 5:
- * 
- * Have a program request the user to enter an uppercase letter. Use nested loops
- * to produce a pyramid pattern like this:
- *       A 
- *      ABA
- *     ABCBA
- *    ABCDCBA
- *   ABCDEDCBA
- * The pattern should extend to the character entered. For example, the preceding
- * pattern would result from an input value of E.
-*/
-
-
 #include <stdio.h>
 
 void print_spaces(unsigned int n);

@@ -1,12 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 6 Exercise 9:
- * 
- * Modify exercise 8 so that it uses a function to return the value of the calculation.
-*/
-
-
 #include <stdio.h>
 
 float calculate(float n1, float n2);

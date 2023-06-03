@@ -1,17 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 6 Exercise 2:
- * 
- * Use nested loops to produce the following pattern:
- * $
- * $$
- * $$$
- * $$$$
- * $$$$$
-*/
-
-
 #include <stdio.h>
 
 int main(void)

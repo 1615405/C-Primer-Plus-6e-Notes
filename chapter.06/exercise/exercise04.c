@@ -1,18 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 6 Exercise 4:
- * 
- * Use nested loops to produce the following pattern:
- * A
- * BC
- * DEF
- * GHIJ
- * KLMNO
- * PQRSTU
-*/
-
-
 #include <stdio.h>
 
 int main(void)

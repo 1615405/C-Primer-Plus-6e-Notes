@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 6 Exercise 1:
- * 
- * Write a program that creates an array with 26 elements and stores the 26 lowercase
- * letters in it. Also have it show the array contents.
-*/
-
-
 #include <stdio.h>
 #define ALPHABET_LENGTH 26
 
