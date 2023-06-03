@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 11 Exercise 13:
- *
- * Write a program that echoes the command-line arguments in reverse word
- * order. That is, if the command-line arguments are see you later, the program
- * should print later you see.
- */
-
 #include <stdio.h>
 
 int main(int argc, char *argv[])

@@ -1,14 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 11 Exercise 9:
- * 
- * Write a function that replaces the contents of a string with the string
- * reversed. Test the function in a complete program that uses a loop to
- * provide input values for feeding to the function.
-*/
-
-
 #include <stdio.h>
 
 #define LIMIT 50

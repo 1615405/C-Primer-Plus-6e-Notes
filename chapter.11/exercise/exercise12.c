@@ -1,15 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 11 Exercise 12:
- * 
- * Write a program that reads input up to EOF and reports the number of words,
- * the number of uppercase letters, the number of lowercase letters, the number
- * of punctuation characters, and the number of digits. Use the ctype.h family
- * of functions.
-*/
-
-
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>

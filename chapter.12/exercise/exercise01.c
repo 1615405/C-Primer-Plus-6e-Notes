@@ -1,12 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 12 Exercise 1:
- * 
- * Rewrite the program in Listing 12.4 so that it does not use global variables.
-*/
-
-
 #include <stdio.h>
 
 void critic(int *units);

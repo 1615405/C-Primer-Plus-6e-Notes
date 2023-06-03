@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 12 Exercise 4:
- *
- * Write and test in a loop a function that returns the number of times it has
- * been called.
-*/
-
-
 #include <stdio.h>
 
 unsigned int counter(void);

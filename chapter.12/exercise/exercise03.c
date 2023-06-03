@@ -1,15 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 12 Exercise 3:
- *
- * Redesign the program described in Programming Exercise 2 so that it uses
- * only automatic variables. Have the program offer the same user interface—
- * that is, it should prompt the user to enter a mode, and so on. You’ll have
- * to come up with a different set of function calls, however.
-*/
-
-
 #include <stdio.h>
 #include "exercise03.h"
 

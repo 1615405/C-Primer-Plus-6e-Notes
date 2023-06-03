@@ -1,18 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 12 Exercise 6:
- *
- * Write a program that generates 1,000 random numbers in the range 1–10. Don’t
- * save or print the numbers, but do print how many times each number was
- * produced. Have the program do this for 10 different seed values. Do the
- * numbers appear in equal amounts? You can use the functions from this chapter
- * or the ANSI C rand() and srand() functions, which follow the same format
- * that our functions do. This is one way to examine the randomness of a
- * particular random-number generator.
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 

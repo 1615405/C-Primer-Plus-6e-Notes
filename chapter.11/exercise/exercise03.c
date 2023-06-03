@@ -1,15 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 11 Exercise 3:
- * 
- * Design and test a function that reads the first word from a line of input
- * into an array and discards the rest of the line. It should skip over leading
- * whitespace. Define a word as a sequence of characters with no blanks, tabs,
- * or newlines in it. 
-*/
-
-
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>

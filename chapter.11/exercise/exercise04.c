@@ -1,14 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 11 Exercise 4:
- * 
- * Design and test a function like that described in Programming Exercise 3
- * except that it accepts a second parameter specifying the maximum number of
- * characters that can be read.
-*/
-
-
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>

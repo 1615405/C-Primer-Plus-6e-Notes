@@ -1,16 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 11 Exercise 6:
- * 
- * Write a function called is_within() that takes a character and a string
- * pointer as its two function parameters. Have the function return a
- * nonzero value (true) if the character is in the string and zero (false)
- * otherwise. Test the function in a complete program that uses a loop to
- * provide input values for feeding to the function.
-*/
-
-
 #include <stdio.h>
 
 #define LIMIT 10

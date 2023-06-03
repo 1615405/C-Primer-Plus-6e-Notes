@@ -1,20 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 12 Exercise 8:
- *
- * Here’s part of a program:
- *
- * Complete the program by providing function definitions for make_array() and
- * show_array(). The make_array() function takes two arguments. The first is
- * the number of elements of an int array, and the second is a value that is to
- * be assigned to each element. The function uses malloc() to create an array
- * of a suitable size, sets each element to the indicated value, and returns a
- * pointer to the array. The show_array() function displays the contents, eight
- * numbers to a line.
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,14 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 11 Exercise 15:
- * 
- * Use the character classification functions to prepare an implementation of
- * atoi(); have this version return the value of 0 if the input string is not a
- * pure number.
-*/
-
-
 #include <stdio.h>
 #include <ctype.h>
 
