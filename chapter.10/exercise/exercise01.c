@@ -1,14 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 10 Exercise 1:
- *
- * Modify the rain program in Listing 10.7 so that it does the calculations
- * using pointers instead of subscripts. (You still have to declare and
- * initialize the array.)
-*/
-
-
 #include <stdio.h>
 
 #define MONTHS 12

@@ -1,18 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 8 Exercise 8
- * 
- * Write a program that shows you a menu offering you the choice of addition,
- * subtraction, multiplication, or division. After getting your choice, the
- * program asks for two numbers, then performs the requested operation. The
- * program should accept only the offered menu choices. It should use type
- * float for the numbers and allow the user to try again if he or she fails to
- * enter a number. In the case of division, the program should prompt the user
- * to enter a new value if 0 is entered as the value for the second number.
-*/
-
-
 #include <stdio.h>
 #include <ctype.h>
 

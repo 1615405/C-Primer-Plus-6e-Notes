@@ -1,12 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 9 Exercise 8:
- * 
- * Redo Programming Exercise 8, but this time use a recursive function.
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 

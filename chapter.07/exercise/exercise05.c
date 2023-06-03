@@ -1,12 +1,3 @@
-/** 
- * C Primer Plus Sixth Edition
- *
- * Chapter 7 Exercise 5:
- * 
- * Redo exercise 4 using a switch.
-*/
-
-
 #include <stdio.h>
 
 #define STOP '#'

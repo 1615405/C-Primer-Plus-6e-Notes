@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 10 Exercise 4:
- * 
- * Write a function that returns the index of the largest value stored in an
- * array-of-double. Test the function in a simple program.
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

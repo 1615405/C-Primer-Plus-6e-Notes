@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 10 Exercise 14:
- *
- * Do Programming Exercise 13, but use variable-length array function
- * parameters.
-*/
-
-
 #include <stdio.h>
 
 #define ROWS 3

@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 7 Exercise 6:
- * 
- * Write a program that reads input up to # and reports the number of times that the
- * sequence ei occurs.
-*/
-
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <ctype.h>

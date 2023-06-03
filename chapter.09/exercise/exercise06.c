@@ -1,15 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 9 Exercise 6:
- * 
- * Write and test a function that takes the addresses of three double variables
- * as arguments and that moves the value of the smallest variable into the
- * first variable, the middle value to the second variable, and the largest
- * value into the third variable.
-*/
-
-
 #include <stdio.h>
 
 double min(double, double);

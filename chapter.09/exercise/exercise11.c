@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 9 Exercise 11:
- * 
- * Write and test a Fibonacci() function that uses a loop instead of recursion
- * to calculate Fibonacci numbers
-*/
-
-
 #include <stdio.h>
 
 long Fibonacci(long n);

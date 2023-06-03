@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 9 Exercise 1:
- * 
- * Devise a function called min(x,y) that returns the smaller of two double
- * values. Test the function with a simple driver.
-*/
-
-
 #include <stdio.h>
 
 double min(double, double);

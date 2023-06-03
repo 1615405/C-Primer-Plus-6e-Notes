@@ -1,14 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 9 Exercise 5:
- * 
- * Write and test a function called larger_of() that replaces the contents of
- * two double variables with the maximum of the two values. For example,
- * larger_of(x,y) would reset both x and y to the larger of the two.
-*/
-
-
 #include <stdio.h>
 
 void larger_of(double *, double *);

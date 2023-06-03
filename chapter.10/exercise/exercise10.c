@@ -10,8 +10,6 @@
  * take three array names and an array size as arguments. Test the function in
  * a simple program.
 */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

@@ -1,20 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 10 Exercise 2:
- * 
- * Write a program that initializes an array-of-double and then copies the
- * contents of the array into three other arrays. (All four arrays should be
- * declared in the main program.) To make the first copy, use a function with
- * array notation. To make the second copy, use a function with pointer
- * notation and pointer incrementing. Have the first two functions take as
- * arguments the name of the target array, the name of the source array, and
- * the number of elements to be copied. Have the third function take as
- * arguments the name of the target, the name of the source, and a pointer to
- * the element following the last element of the source.
-*/
-
-
 #include <stdio.h>
 
 #define LENGTH 5

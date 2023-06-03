@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 8 Exercise 7:
- *
- * Modify Programming Exercise 8 from Chapter 7 so that the menu choices are
- * labeled by characters instead of by numbers; use q instead of 5 as the cue
- * to terminate input.
- */
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <ctype.h>

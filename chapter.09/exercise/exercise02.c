@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 9 Exercise 2:
- * 
- * Devise a function chline(ch,i,j) that prints the requested character in
- * columns i through j. Test it in a simple driver.
-*/
-
-
 #include <stdio.h>
 
 void chline(char, unsigned int, unsigned int);

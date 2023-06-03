@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 10 Exercise 6:
- * 
- * Write a function that reverses the contents of an array of double and test
- * it in a simple program.
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

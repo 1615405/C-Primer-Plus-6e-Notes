@@ -1,15 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 7 Exercise 3:
- * 
- * Write a program that reads integers until 0 is entered. After input
- * terminates, the program should report the total number of even integers
- * (excluding the 0) entered, the average value of the even integers, the total
- * number of odd integers entered, and the average value of the odd integers.
-*/
-
-
 #include <stdio.h>
 #include <ctype.h>
 

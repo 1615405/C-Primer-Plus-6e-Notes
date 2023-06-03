@@ -1,13 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- *
- * Chapter 10 Exercise 11:
- *
- * Rewrite the rain program in Listing 10.7 so that the main tasks are
- * performed by functions instead of in main().
-*/
-
-
 #include <stdio.h>
 
 #define MONTHS 12

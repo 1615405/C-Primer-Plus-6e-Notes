@@ -1,14 +1,3 @@
-/**
- * C Primer Plus Sixth Edition
- * 
- * Chapter 10 Exercise 5:
- * 
- * Write a function that returns the difference between the largest and
- * smallest elements of an array-of-double. Test the function in a simple
- * program
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
