@@ -16,7 +16,6 @@ int main(void)
     } while (lower > upper);
 
     printf("\n");
-    // table header
     printf(" Integer       | Square        | Cube          \n");
     printf("---------------|---------------|---------------\n");
     for (long int i = lower; i <= upper; i++)
