@@ -54,8 +54,9 @@ int main(void)
                 printf("Please enter an integer between 1 and 5.\n");
                 continue;
         }
-        if (exit_flag)
+        if (exit_flag) {
             break;
+        }
         
         printf("Enter number of hours worked in a week: ");
         while (scanf("%f", &hours) != 1 || hours <= 0) {

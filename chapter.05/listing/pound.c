@@ -19,7 +19,8 @@ int main(void)
 
 void pound(int n)
 {
-    while (n-- > 0)
+    while (n-- > 0) {
         printf("#");
+    }
     printf("\n");
 }
