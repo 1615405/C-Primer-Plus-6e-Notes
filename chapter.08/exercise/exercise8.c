@@ -75,10 +75,10 @@ float get_number(void)
     int ch;
     float num;
 
-    while (scanf("%f", &num) != 1)
-    {
-        while ((ch = getchar()) != '\n')
+    while (scanf("%f", &num) != 1) {
+        while ((ch = getchar()) != '\n') {
             putchar(ch);
+        }
 
         printf(" is not a number.\n");
         printf("Please enter a number, such as 2.5, -1.78E8, or 3: ");

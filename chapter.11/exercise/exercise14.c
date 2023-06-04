@@ -10,8 +10,7 @@ int main(int argc, char *argv[])
     long power;
     char *end;
 
-    if (argc != 3)
-    {
+    if (argc != 3) {
         print_error_message();
         return 1;
     }
@@ -23,8 +22,7 @@ int main(int argc, char *argv[])
 
     base = strtod(argv[1], &end);
 
-    if (*end)
-    {
+    if (*end) {
         print_error_message();
         return 1;
     }
@@ -36,8 +34,7 @@ int main(int argc, char *argv[])
 
     power = strtol(argv[2], &end, 10);
 
-    if (*end)
-    {
+    if (*end) {
         print_error_message();
         return 1;
     }

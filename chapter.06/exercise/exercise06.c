@@ -6,8 +6,7 @@ int main(void)
     int reads;
 
     printf("This program prints a table of integers with their squares and cubes.\n");
-    do
-    {
+    do {
         printf("Enter lower and upper integer limits (in that order): ");
         reads = scanf("%ld%ld", &lower, &upper);
         if (reads != 2) {
@@ -18,8 +17,7 @@ int main(void)
     printf("\n");
     printf(" Integer       | Square        | Cube          \n");
     printf("---------------|---------------|---------------\n");
-    for (long int i = lower; i <= upper; i++)
-    {
+    for (long int i = lower; i <= upper; i++) {
         printf(" %-14ld| %-14ld| %-14ld\n", i, i * i, i * i * i);
     }
     printf("\n");

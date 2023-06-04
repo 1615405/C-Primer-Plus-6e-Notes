@@ -16,10 +16,12 @@ int main(void)
         }
 
         char_count++;
-        if (char_count % 10 == 0)
+        if (char_count % 10 == 0) {
             printf("\n");
-        else
+        }
+        else {
             printf(" ");
+        }
     }
 
     printf("\n");

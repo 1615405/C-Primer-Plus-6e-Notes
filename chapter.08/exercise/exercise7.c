@@ -75,23 +75,27 @@ int main(void)
 
 void flush_input_buffer(void)
 {
-    while (getchar() != '\n')
+    while (getchar() != '\n') {
         continue;
+    }
 }
 
 float calculate_gross_pay(float hours, float rate)
 {
-    if (hours > OVERTIME_HOURS)
+    if (hours > OVERTIME_HOURS) {
         return OVERTIME_HOURS * rate + (hours - OVERTIME_HOURS) * rate * OVERTIME_MULTIPLIER;
+    }
     return hours * rate;
 }
 
 float calulate_taxes(float gross_pay)
 {
-    if (gross_pay > TAX_BRACKET_2)
+    if (gross_pay > TAX_BRACKET_2) {
         return TAX_RATE_3 * (gross_pay - TAX_BRACKET_2) + TAX_RATE_2 * (TAX_BRACKET_2 - TAX_BRACKET_1) + TAX_RATE_1 * TAX_BRACKET_1;
-    else if (gross_pay > TAX_BRACKET_1)
+    }
+    else if (gross_pay > TAX_BRACKET_1) {
         return TAX_RATE_2 * (gross_pay - TAX_BRACKET_1) + TAX_RATE_1 * TAX_BRACKET_1;
+    }
     return TAX_RATE_1 * gross_pay;
 }
 
@@ -102,8 +106,9 @@ int get_first(void)
         ch = getchar();
     } while (isspace(ch));
 
-    while ((garbage = getchar()) != '\n' && garbage != EOF)
+    while ((garbage = getchar()) != '\n' && garbage != EOF) {
         continue;
+    }
     
     return ch;
 }

@@ -18,25 +18,24 @@ int main(void)
 
     printf("Enter text to be analyzed (| to terminate):\n");
     prev = '\n';
-    while ((c = getchar()) != STOP)
-    {
+    while ((c = getchar()) != STOP) {
         n_chars++;
-        if (c == '\n')
+        if (c == '\n') {
             n_lines++;
-        if (!isspace(c) && !inword)
-        {
+        }
+        if (!isspace(c) && !inword) {
             inword = true;
             n_words++;
         }
-        if (isspace(c) && inword)
-        {
+        if (isspace(c) && inword) {
             inword = false;
         }
         prev = c;
     }
 
-    if (prev != '\n')
+    if (prev != '\n') {
         p_lines = 1;
+    }
     printf("characters = %ld, words = %d, lines = %d, partial lines = %d.\n", n_chars, n_words, n_lines, p_lines);
 
     return 0;

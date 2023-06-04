@@ -18,14 +18,12 @@ int main(void)
 
     printf("US 1988 Tax Calculator\n");
 
-    while (1)
-    {
+    while (1) {
         printf("1) Single  2) Head of Household  3) Married, Joint  4) Married Separate\n");
         printf("Enter your tax category (1-4) or 5 to quit: ");
         scanf("%d", &category);
 
-        switch (category)
-        {
+        switch (category) {
             case SINGLE:
                 bracket = 17850.0;
                 break;
@@ -47,17 +45,18 @@ int main(void)
                 continue;
         }
         printf("Enter your income: ");
-        while (scanf("%f", &income) != 1 || income < 0)
-        {
+        while (scanf("%f", &income) != 1 || income < 0) {
             flush_input_buffer();
             printf("Invalid input: please enter a positive number.\n");
             printf("Enter your income: ");
         }
 
-        if (income > bracket)
+        if (income > bracket) {
             taxes = RATE_2 * (income - bracket) + RATE_1 * bracket;
-        else
+        }
+        else {
             taxes = RATE_1 * income;
+        }
 
         printf("You will owe $%.2f in taxes.\n\n", taxes);
     }
@@ -65,6 +64,7 @@ int main(void)
 
 void flush_input_buffer(void)
 {
-    while (getchar() != '\n')
+    while (getchar() != '\n') {
         continue;
+    }
 }

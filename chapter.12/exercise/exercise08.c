@@ -11,13 +11,11 @@ int main(void)
     int value;
 
     printf("Enter the number of elements: ");
-    while (scanf("%d", &size) == 1 && size > 0)
-    {
+    while (scanf("%d", &size) == 1 && size > 0) {
         printf("Enter the initialization value: ");
         scanf("%d", &value);
         pa = make_array(size, value);
-        if (pa)
-        {
+        if (pa) {
             show_array(pa, size);
             free(pa);
         }
@@ -31,23 +29,25 @@ int *make_array(int elem, int val)
 {
     int *arr = (int *)malloc(elem * sizeof(int));
 
-    if (arr != NULL)
-        for (int i = 0; i < elem; i++)
+    if (arr != NULL) {
+        for (int i = 0; i < elem; i++) {
             arr[i] = val;
+        }
+    }
 
     return arr;
 }
 
 void show_array(const int ar[], int n)
 {
-    // print contents of an array of ints, 8 elements to a line
     int i;
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         printf("%d ", ar[i]);
-        if (i % 8 == 7)
+        if (i % 8 == 7) {
             putchar('\n');
+        }
     }
-    if (i % 8 != 0)
+    if (i % 8 != 0) {
         putchar('\n');
+    }
 }

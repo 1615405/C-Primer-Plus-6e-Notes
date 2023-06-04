@@ -24,8 +24,7 @@ int main(void)
     int rate_option;
     float rate, hours, gross_pay, taxes;
 
-    while (true)
-    {
+    while (true) {
         printf("*****************************************************************\n");
         printf("Enter the number corresponding to the desired pay rate or action:\n");
         printf("1) $8.75/hr 							2) $9.33/hr\n");
@@ -34,8 +33,7 @@ int main(void)
         printf("*****************************************************************\n");
 
         scanf("%d", &rate_option);
-        switch (rate_option)
-        {
+        switch (rate_option) {
             case 1:
                 rate = RATE_1;
                 break;
@@ -60,8 +58,7 @@ int main(void)
             break;
         
         printf("Enter number of hours worked in a week: ");
-        while (scanf("%f", &hours) != 1 || hours <= 0) 
-        {
+        while (scanf("%f", &hours) != 1 || hours <= 0) {
             flush_input_buffer();
             printf("Please enter a positive number. \n");
             printf("Enter number of hours worked in a week: ");
@@ -82,22 +79,26 @@ int main(void)
 
 void flush_input_buffer(void)
 {
-    while (getchar() != '\n')
+    while (getchar() != '\n') {
         continue;
+    }
 }
 
 float calculate_gross_pay(float hours, float rate)
 {
-    if (hours > OVERTIME_HOURS)
+    if (hours > OVERTIME_HOURS) {
         return OVERTIME_HOURS * rate + (hours - OVERTIME_HOURS) * rate * OVERTIME_MULTIPLIER;
+    }
     return hours * rate;
 }
 
 float calculate_taxes(float gross_pay)
 {
-    if (gross_pay > TAX_BRACKET_2)
+    if (gross_pay > TAX_BRACKET_2) {
         return TAX_RATE_3 * (gross_pay - TAX_BRACKET_2) + TAX_RATE_2 * (TAX_BRACKET_2 - TAX_BRACKET_1) + TAX_RATE_1 * TAX_BRACKET_1;
-    else if (gross_pay > TAX_BRACKET_1)
+    }
+    else if (gross_pay > TAX_BRACKET_1) {
         return TAX_RATE_2 * (gross_pay - TAX_BRACKET_1) + TAX_RATE_1 * TAX_BRACKET_1;
+    }
     return TAX_RATE_1 * gross_pay;
 }

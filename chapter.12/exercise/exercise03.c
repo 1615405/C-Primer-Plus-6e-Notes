@@ -7,8 +7,7 @@ int main(void)
     double distance, fuel;
 
     set_mode(&mode);
-    while (mode >= 0)
-    {
+    while (mode >= 0) {
         get_info(mode, &distance, &fuel);
         show_info(mode, distance, fuel);
         set_mode(&mode);

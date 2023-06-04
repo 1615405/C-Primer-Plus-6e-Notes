@@ -48,18 +48,15 @@ void show_info(int mode, double distance, double fuel)
 {
     double efficiency;
 
-    if (mode == METRIC)
-    {
+    if (mode == METRIC) {
         efficiency = fuel / distance * 100;
         printf("Fuel consumption is %.3f liters per 100 kilometers.\n", efficiency);
     }
-    else if (mode == US)
-    {
+    else if (mode == US) {
         efficiency = distance / fuel;
         printf("Fuel consumption is %.3f miles per gallon.\n", efficiency);
     }
-    else
-    {
+    else {
         printf("Error. Invalid mode: %d\n", mode);
     }
 }

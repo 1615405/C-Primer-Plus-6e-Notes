@@ -11,12 +11,12 @@ int main(void)
     float daphne_balance = DAPHNE_PRINCIPLE;
     float deirdre_balance = DEIRDE_PRINCIPLE;
 
-    while (deirdre_balance <= daphne_balance)
-    {
+    while (deirdre_balance <= daphne_balance) {
         deirdre_balance *= 1.0f + DEIRDE_INTEREST;
         daphne_balance += DAPHNE_PRINCIPLE * DAPHNE_INTEREST;
         years++;
     }
+    
     printf("After %d years, Daphne's investment is worth $%.2f and Deirdre's investment is worth $%.2f.\n",
         years, daphne_balance, deirdre_balance);
 

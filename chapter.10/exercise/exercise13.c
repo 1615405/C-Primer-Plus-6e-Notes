@@ -13,8 +13,7 @@ int main(void)
 
     for (int i = 0; i < ROWS; i++) {
         printf("Enter set of %d doubles: ", COLUMNS);
-        for (int j = 0; j < COLUMNS; j++)
-        {
+        for (int j = 0; j < COLUMNS; j++) {
             scanf("%lf", data[i] + j);
         }
     }
@@ -56,8 +55,9 @@ double largest_value(double (*array)[COLUMNS], int rows)
     double dmax = array[0][0];
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < COLUMNS; j++) {
-            if (array[i][j] > dmax)
+            if (array[i][j] > dmax) {
                 dmax = array[i][j];
+            }
         }
     }
     return dmax;

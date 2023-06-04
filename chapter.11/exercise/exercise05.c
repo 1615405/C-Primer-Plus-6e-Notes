@@ -32,7 +32,6 @@ char *findchar(char *str, const char ch)
 {
     while (*str != '\0') {
         if (*str == ch) {
-
             return str;
         }
         str++;

@@ -7,22 +7,18 @@ void map_lowercase(void);
 
 int main(int argc, char *argv[])
 {
-    if (argc == 1) 
-    {
+    if (argc == 1)  {
         map_identity();
         return 0;
     }
 
-    else if (argc > 2 || (argc == 2 && argv[1][0] != '-'))
-    {
+    else if (argc > 2 || (argc == 2 && argv[1][0] != '-')) {
         printf("Usage: program_name [-p | -l | -u]\n");
         return 1;
     }
 
-    else
-    {
-        switch (argv[1][1])
-        {
+    else {
+        switch (argv[1][1]) {
             case 'p':
                 map_identity();
                 break;
@@ -32,9 +28,9 @@ int main(int argc, char *argv[])
             case 'l':
                 map_lowercase();
                 break;
-        default:
-            printf("Usage: program_name [-p | -l | -u]\n");
-            return 1;
+            default:
+                printf("Usage: program_name [-p | -l | -u]\n");
+                return 1;
         }
     }
 
@@ -54,10 +50,10 @@ void map_uppercase(void)
 {
     char ch;
 
-    while ((ch = getchar()) != EOF)
-    {
-        if (islower(ch))
+    while ((ch = getchar()) != EOF) {
+        if (islower(ch)) {
             ch = toupper(ch);
+        }
         putchar(ch);
     }
 }
@@ -66,10 +62,10 @@ void map_lowercase(void)
 {
     char ch;
 
-    while ((ch = getchar()) != EOF)
-    {
-        if (isupper(ch))
+    while ((ch = getchar()) != EOF) {
+        if (isupper(ch)) {
             ch = tolower(ch);
+        }
         putchar(ch);
     }
 }

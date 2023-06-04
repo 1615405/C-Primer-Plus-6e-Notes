@@ -11,10 +11,8 @@ int main(void)
 
     printf("Enter some text; enter # to quit.\n");
 
-    while ((ch = getchar()) != '#')
-    {
-        switch(ch)
-        {
+    while ((ch = getchar()) != '#') {
+        switch(ch) {
             case 'a':
             case 'A':
                 a_ct++;

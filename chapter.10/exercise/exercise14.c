@@ -56,8 +56,9 @@ double largest_value(int rows, int cols, double array[rows][cols])
     double dmax = array[0][0];
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            if (array[i][j] > dmax)
+            if (array[i][j] > dmax) {
                 dmax = array[i][j];
+            }
         }
     }
     return dmax;

@@ -10,15 +10,12 @@ int main(void)
     int input;
 
     printf("Enter integers (0 to stop):\n");
-    while (scanf("%d", &input) == 1 && input != STOP)
-    {
-        if (input % 2 == 0)
-        {
+    while (scanf("%d", &input) == 1 && input != STOP) {
+        if (input % 2 == 0) {
             even_count++;
             even_sum += input;
         }
-        else
-        {
+        else {
             odd_count++;
             odd_sum += input;
         }

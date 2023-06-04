@@ -9,8 +9,7 @@ int main(void)
     printf("Enter a number of terms to sum: ");
     scanf("%ld", &limit);
 
-    for (long int i = 1; i <= limit; i++)
-    {
+    for (long int i = 1; i <= limit; i++) {
         series1 += 1.0f / i;
         series2 += (1.0f / i) * sign;
         sign = -sign;

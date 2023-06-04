@@ -7,8 +7,7 @@ int main(void)
 
     printf("Enter a string: ");
     scanf("%s", word);
-    for (int i = strlen(word) - 1; i >= 0; i--)
-    {
+    for (int i = strlen(word) - 1; i >= 0; i--) {
         printf("%c", word[i]);
     }
     printf("\n");

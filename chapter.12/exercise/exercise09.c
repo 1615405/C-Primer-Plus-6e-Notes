@@ -14,15 +14,16 @@ int main(void)
     char **words;
 
     printf("How many words do you wish to enter?\n");
-    if (scanf("%d", &n) == 1 && n > 0)
-    {
-        while (getchar() != '\n')
+    if (scanf("%d", &n) == 1 && n > 0) {
+        while (getchar() != '\n') {
             continue;
+        }
         words = get_words(n);
 
         printf("Here are your words:\n");
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             printf("%s\n", words[i]);
+        }
     }
 
     return 0;
@@ -41,17 +42,16 @@ char **get_words(int n)
     printf("Enter %d words now:\n", n);
     word_start = fgets(tmp, LIMIT, stdin);
 
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         find_word(&word_start, &word_end);
 
-        if (*word_start == '\0')
+        if (*word_start == '\0') {
             break;
+        }
 
         word_length = word_end - word_start;
         word_array[i] = (char *)malloc((word_length + 1) * sizeof(char));
-        if (word_array[i] != NULL)
-        {
+        if (word_array[i] != NULL) {
             strncpy(word_array[i], word_start, word_length);
             word_array[i][word_length] = '\0';
         }
@@ -59,23 +59,25 @@ char **get_words(int n)
         word_start = word_end;
     }
 
-    if (i < n)
-        for (; i < n; i++)
-        {
+    if (i < n) {
+        for (; i < n; i++) {
             word_array[i] = (char *)malloc(sizeof(char));
             *word_array[i] = '\0';
         }
+    }
 
     return word_array;
 }
 
 static void find_word(char **start, char **end)
 {
-    while (isspace(**start))
+    while (isspace(**start)) {
         (*start)++;
+    }
 
     *end = *start;
 
-    while (!isspace(**end) && **end != '\0')
+    while (!isspace(**end) && **end != '\0') {
         (*end)++;
+    }
 }

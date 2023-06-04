@@ -7,12 +7,13 @@ int main(void)
 {
     char ch;
 
-    while ((ch = getchar()) != '\n')
-    {
-        if (isalpha(ch))
+    while ((ch = getchar()) != '\n') {
+        if (isalpha(ch)) {
             putchar(ch + 1);
-        else
+        }
+        else {
             putchar(ch);
+        }
     }
     putchar(ch);
 

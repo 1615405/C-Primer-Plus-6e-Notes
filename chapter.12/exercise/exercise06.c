@@ -7,8 +7,7 @@ void random_sample(void);
 
 int main(void)
 {
-    for (int i = 1; i < 11; i++)
-    {
+    for (int i = 1; i < 11; i++) {
         printf("Random Sample: run #%d\n", i);
         srand(i);
         random_sample();
@@ -25,20 +24,20 @@ void random_sample(void)
     int rand_int;
 
     int i = 0;
-    while (i < SIZE)
-    {
+    while (i < SIZE) {
         rand_int = rand();
-        if (rand_int >= RAND_LIMIT)
+        if (rand_int >= RAND_LIMIT) {
             continue;
-        else
-        {
+        }
+        else {
             rand_int %= 10;
             counts[rand_int]++;
         }
         i++;
     }
     puts("Counts");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++) {
         printf("%2d: %3d  ", i + 1, counts[i]);
+    }
     putchar('\n');
 }

@@ -14,10 +14,8 @@ int main(void)
     float max = MIN;
 
     printf("Enter the first score (q to quit): ");
-    while (scanf("%f", &score) == 1)
-    {
-        if (score < MIN || score > MAX)
-        {
+    while (scanf("%f", &score) == 1) {
+        if (score < MIN || score > MAX) {
             printf("%0.1f is an invalid value. Try again: ", score);
             continue;
         }
@@ -28,12 +26,12 @@ int main(void)
         n++;
         printf("Enter next score (q to quit): ");
     }
-    if (n > 0)
-    {
+    if (n > 0) {
         printf("Average of %d score is %0.1f.\n", n, total / n);
         printf("Low = %0.1f, high = %0.1f.\n", min, max);
     }
-    else
+    else {
         printf("No valid scores were entered.\n");
+    }
     return 0;
 }

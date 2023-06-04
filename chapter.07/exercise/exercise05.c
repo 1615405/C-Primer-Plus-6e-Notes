@@ -7,10 +7,8 @@ int main(void)
     char ch;
 
     printf("Enter input (%c to exit):\n", STOP);
-    while ((ch = getchar()) != STOP)
-    {
-        switch (ch)
-        {
+    while ((ch = getchar()) != STOP) {
+        switch (ch) {
             case '.':
                 printf("!");
                 break;

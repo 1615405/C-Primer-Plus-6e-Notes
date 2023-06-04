@@ -9,8 +9,7 @@ int main(void)
     int years = 0;
     float balance = WINNINGS;
 
-    while (balance > 0)
-    {
+    while (balance > 0) {
         balance -= SPENDING;
         balance *= 1.0f + INTEREST;
         years++;
