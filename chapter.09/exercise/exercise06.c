@@ -8,7 +8,6 @@ int main(void)
 {
     double x, y, z;
 
-    printf("Test sort_variables():\n");
     printf("Enter three numbers x, y, and z:\n");
     while (scanf("%lf %lf %lf", &x, &y, &z) == 3) {
         putchar('\n');

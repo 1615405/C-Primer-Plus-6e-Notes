@@ -8,8 +8,6 @@ int main(void)
     double base, output;
     int exponent;
 
-    printf("Test power() function:\n");
-
     while (scanf("%lf %d", &base, &exponent) == 2) {
         output = power(base, exponent);
         printf("%f ^ %d = %f\n", base, exponent, output);

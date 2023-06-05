@@ -6,8 +6,6 @@ int main(void)
 {
     double x, y;
 
-    printf("Test larger_of() function\n");
-    printf("=========================\n");
     printf("Enter two numbers x and y: ");
     while (scanf("%lf %lf", &x, &y) == 2) {
         printf("Before calling larger_of():\n");

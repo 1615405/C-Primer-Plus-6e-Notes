@@ -1,5 +1,3 @@
-/* lethead1.c */
-
 #include <stdio.h>
 
 #define NAME "GIGATHINK, INC."
@@ -22,8 +20,7 @@ int main(void)
 
 void starbar(void)
 {
-    int count;
-    for (count = 1; count <= WIDTH; count++) {
+    for (int count = 1; count <= WIDTH; count++) {
         putchar('*');
     }
     putchar('\n');

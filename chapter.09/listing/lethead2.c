@@ -1,5 +1,3 @@
-/* lethead2.c */
-
 #include <stdio.h>
 #include <string.h>
 
@@ -34,8 +32,7 @@ int main(void)
 
 void show_n_char(char ch, int num)
 {
-    int count;
-    for (count = 1; count <= num; count++) {
+    for (int count = 1; count <= num; count++) {
         putchar(ch);
     }
 }

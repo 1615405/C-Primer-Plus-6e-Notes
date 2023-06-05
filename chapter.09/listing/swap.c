@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 
-// interchange() use different variables from main(), so interchanging the values of u and v has no effect on x and y
 void interchange(int u, int v);
 
 int main(void)

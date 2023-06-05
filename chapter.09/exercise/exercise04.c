@@ -10,7 +10,6 @@ int main(void)
     printf("Enter two numbers: ");
     while (scanf("%lf %lf", &x, &y) == 2) {
         printf("%f\n", harmonic_mean(x, y));
-
         printf("Enter two numbers: ");
     }
 
