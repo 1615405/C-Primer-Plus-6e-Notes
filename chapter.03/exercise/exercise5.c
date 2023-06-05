@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    unsigned int SECONDS_PER_YEAR = 31560000;
+    const unsigned int SECONDS_PER_YEAR = 31560000;
     unsigned int age;
 
     printf("What is your age (in years)?: ");
