@@ -11,9 +11,6 @@ together correctly.
 In general, all C functions use braces to mark the begining as well as the end of the body of a function. Their presence 
 is mandatory.
 
-In C, all variable must be declared before they are used. This means that you have to provide lists of all the variables
-you use in a program and that you have to show which data type each variable is.
-
 Note that the assignment statement assigns a value from the right side to the left side.
 
 C uses the terms actual argument and formal argument to distinguish between a specific value sent to a function and a 
