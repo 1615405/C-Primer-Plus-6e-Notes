@@ -25,8 +25,7 @@ int main(void)
     while (start || stop) {
         if (bad_limits(start, stop, MIN, MAX)) {
             printf("Please try again.\n");
-        }
-        else {
+        } else {
             answer = sum_squares(start, stop);
             printf("The sum of the squares of the integers from %ld to %ld is %g\n", start, stop, answer);
         }

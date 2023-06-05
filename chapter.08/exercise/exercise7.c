@@ -71,6 +71,8 @@ int main(void)
                hours, rate, gross_pay, taxes);
         printf("\n");
     }
+
+    return 0;
 }
 
 void flush_input_buffer(void)
