@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-const double INCH_PER_CEREMETER = 2.54;
-
 int main(void)
 {
+    const double INCH_PER_CEREMETER = 2.54;
     int inch;
     scanf("%d", &inch);
 
