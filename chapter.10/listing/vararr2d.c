@@ -45,11 +45,10 @@ int main(void)
 
 int sum2d(int rows, int cols, int ar[rows][cols])
 {
-    int r, c;
     int tot = 0;
 
-    for (r = 0; r < rows; r++) {
-        for (c = 0; c < cols; c++) {
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < cols; c++) {
             tot += ar[r][c];
         }
     }

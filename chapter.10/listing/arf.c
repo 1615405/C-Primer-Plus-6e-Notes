@@ -22,8 +22,7 @@ int main(void)
 
 void show_array(const double ar[], int n)
 {
-    int i;
-    for (i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         printf("%8.3f ", ar[i]);
     }
     putchar('\n');
@@ -31,8 +30,7 @@ void show_array(const double ar[], int n)
 
 void mult_array(double ar[], int n, double mult)
 {
-    int i;
-    for (i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         ar[i] *= mult;
     }
 }

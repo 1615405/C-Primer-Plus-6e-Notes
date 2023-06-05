@@ -18,7 +18,6 @@ int main(void)
         }
     }
 
-    // print row averages
     printf("Row Averages:\n");
     for (int i = 0; i < ROWS; i++) {
         printf("\tAverage for row %d: %.3f\n", i + 1, compute_row_average(data[i], COLUMNS));

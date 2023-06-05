@@ -26,10 +26,9 @@ int main(void)
 
 void sum_rows(int ar[][COLS], int rows)
 {
-    int r, c, tot;
-    for (r = 0; r < rows; r++) {
-        tot = 0;
-        for (c = 0; c < COLS; c++) {
+    for (int r = 0; r < rows; r++) {
+        int tot = 0;
+        for (int c = 0; c < COLS; c++) {
             tot += ar[r][c];
         }
         printf("row %d: sum = %d\n", r, tot);
@@ -38,10 +37,9 @@ void sum_rows(int ar[][COLS], int rows)
 
 void sum_cols(int ar[][COLS], int rows)
 {
-    int r, c, tot;
-    for (c = 0; c < COLS; c++) {
-        tot = 0;
-        for (r = 0; r < rows; r++) {
+    for (int c = 0; c < COLS; c++) {
+        int tot = 0;
+        for (int r = 0; r < rows; r++) {
             tot += ar[r][c];
         }
         printf("col %d: sum = %d\n", c, tot);
@@ -50,10 +48,9 @@ void sum_cols(int ar[][COLS], int rows)
 
 int sum2d(int ar[][COLS], int rows)
 {
-    int r, c;
     int tot = 0;
-    for (r = 0; r < rows; r++) {
-        for (c = 0; c < COLS; c++) {
+    for (int r = 0; r < rows; r++) {
+        for (int c = 0; c < COLS; c++) {
             tot += ar[r][c];
         }
     }
