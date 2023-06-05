@@ -6,8 +6,7 @@ int main(void)
     int inch;
     scanf("%d", &inch);
 
-    float ceremeter;
-    ceremeter = INCH_PER_CEREMETER * inch;
+    float ceremeter = INCH_PER_CEREMETER * inch;
     printf("%.2f\n", ceremeter);
     return 0;
 }
