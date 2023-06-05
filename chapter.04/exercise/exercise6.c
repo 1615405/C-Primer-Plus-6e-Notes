@@ -3,8 +3,7 @@
 
 int main(void)
 {
-    char first_name[20];
-    char last_name[20];
+    char first_name[20], last_name[20];
 
     printf("Enter your first and last name: ");
     scanf("%s %s", first_name, last_name);

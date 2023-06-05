@@ -3,8 +3,7 @@
 int main(void)
 {
     const float BITS_PER_BYTE = 8;
-    float download_speed_Mps;
-    float file_size_MB;
+    float download_speed_Mps, file_size_MB;
 
     printf("Enter the download speed (in megabits/second): ");
     scanf("%f", &download_speed_Mps);

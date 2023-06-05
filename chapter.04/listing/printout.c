@@ -6,9 +6,8 @@
 
 int main()
 {
-    int number = 7;
+    int number = 7, cost = 7800;
     float pies = 12.75;
-    int cost = 7800;
 
     printf("The %d contestants ate %f berry pies.\n", number, pies);
     printf("The value of pi is %f.\n", PI);

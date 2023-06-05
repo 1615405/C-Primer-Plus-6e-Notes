@@ -4,8 +4,7 @@ int main(void)
 {
     const float KM_PER_MILE = 1.609;
     const float LT_PER_GALLON = 3.785;
-    float miles_travelled, gallons_gas_consumed;
-    float miles_per_gallon, liters_per_100km;
+    float miles_travelled, gallons_gas_consumed, miles_per_gallon, liters_per_100km;
 
     printf("Enter your distance travelled in miles: ");
     scanf("%f", &miles_travelled);

@@ -7,8 +7,7 @@
 
 int main(void)
 {
-    short num = PAGES;
-    short mnum = -PAGES;
+    short num = PAGES, mnum = -PAGES;
 
     printf("num as short and unsigned short: %hd %hu\n", num, num);
     printf("-num as short and unsigned short: %hd %hu\n", mnum, mnum);
