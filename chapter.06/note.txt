@@ -1,29 +1,17 @@
-If scanf() runs into a problem before attemping to convert the value(for example, by detecting the end of the file 
-or by encountering a handware problem), it returns the special value EOF, which typically is defined as -1.
-
 When using while, keep in mind that only the single statement, simple or compound, following the test condition is 
 part of the loop.
-
-For C, a true expression has the value 1, and a false expression has the value 0.
 
 All nonzero values are regarded as true, and only 0 is recognized as false. Alternatively, you can say that a while 
 loop executes as long as its test condition evaluates to nonzero. Keep in mind that relational expressions evaluate 
 to 1 if true and to 0 if false, so such expressions really are numeric.
 
 Furthermore, the value of an assignment statement is the value of the left side, so status = 1 has the same numerical
-value of 1. 
+value of 1.
 
-A _Bool variable can only have a value of 1(true) or 0(false). If you try to assign a nonzero numeric value to a 
-_Bool variable, the variable is set to 1, reflecting that C considers any nonzero value to be true.
-
-C99 also provides for a stdbool.h header files. This header file makes bool an alias for _Bool and defines true and 
-false as symbolic constants for the values 1 and 0. 
-
-The for loop gathers all three actions(initializing, testing, and updating) into one place.
-
-The first expression is the initialization. It is done just once, when the for loop first starts. The second 
-expression is the test condition; it is evaluated before each potential execution of a loop. When the expression is
-false, the loop is terminated. The third expression, the change or update, is evaluated at the end of each loop.
+The for loop gathers all three actions(initializing, testing, and updating) into one place.The first expression is the 
+initialization. It is done just once, when the for loop first starts. The second expression is the test condition; 
+it is evaluated before each potential execution of a loop. When the expression is false, the loop is terminated. 
+The third expression, the change or update, is evaluated at the end of each loop.
 
 Each of the three control expressions is a full expression, so any side effects in a control expression, such as 
 incrementing a value, take place before the program evaluates another expression.
@@ -38,19 +26,6 @@ The while loop and the for loop are both entry-condition loops. The test conditi
 of the loop, so it possible for the statements in the loop to never execute. C also has an exit-condition loop, 
 in which the condition is checked after each iteration of the loop, guaranteeing that statements are executed at 
 least once. This variety is called a do while loop.
-
-A do while loop is always executed at least once because the test is made after the body of the loop has been 
-executed. A for loop or a while loop, on the other hand, can be executed zero times because the test is made before
-execution.
-
-The numbers used to identify the array elements are called subscripts, indices, or offsets. The subscripts must be 
-integers, and, as mentioned, and the subscripting begins with 0. The array elements are stored next to each other 
-in memory.
-
-Employing a function involves three sperates steps:
-    1. Declare the function with a function prototype.
-    2. Use the function from within a program with a function call.
-    3. Define the function
 
 The prototype allows the compiler to see whether you've used the function correctly, and the definition sets down 
 how the function works. The prototype and definition are examples of the contemporary programming practice of 

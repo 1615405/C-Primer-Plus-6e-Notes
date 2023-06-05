@@ -9,7 +9,7 @@ int main(void)
     for (i = 0; i < 8; i++) {
         scanf("%d", &int_array[i]);
     }
-    for (i--; i >= 0; i--) {
+    for (i = 7; i >= 0; i--) {
         printf("%d", int_array[i]);
     }
     printf("\n");

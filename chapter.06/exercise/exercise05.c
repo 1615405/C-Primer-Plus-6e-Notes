@@ -4,8 +4,7 @@ void print_spaces(unsigned int n);
 
 int main(void)
 {
-    char uppercase_letter;
-    char c1, c2;
+    char uppercase_letter, c1, c2;
 
     do {
         printf("Enter an uppercase letter: ");
@@ -23,6 +22,7 @@ int main(void)
         print_spaces(uppercase_letter - c1);
         printf("\n");
     }
+    
     return 0;
 }
 
