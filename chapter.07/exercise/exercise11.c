@@ -81,8 +81,7 @@ int main(void)
         if (subtotal >= 100) {
             discount_flag = true;
             discount = DISCOUNT_RATE * subtotal;
-        }
-        else {
+        } else {
             discount_flag = false;
         }
 
@@ -107,6 +106,8 @@ int main(void)
 
         flush_input_buffer();
     }
+
+    return 0;
 }
 
 void flush_input_buffer(void)
@@ -120,8 +121,7 @@ float calculate_shipping(float weight)
 {
     if (weight < 5.0) {
         return SHIPPING_5LB;
-    }
-    else if (weight < 20.0) {
+    } else if (weight < 20.0) {
         return SHIPPING_20LB;
     }
     return SHIPPING_20LB + SHIPPING_OVER_20LB_RATE * (weight - 20.0);

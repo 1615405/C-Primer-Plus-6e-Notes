@@ -23,8 +23,7 @@ int main(void)
         taxes = calculate_taxes(gross_pay);
 
         printf("For %.1f hours of work you make $%.2f and pay $%.2f in taxes.\n", hours, gross_pay, taxes);
-    }
-    else {
+    } else {
         printf("Invalid input...terminating.\n");
     }
 

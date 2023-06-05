@@ -17,8 +17,7 @@ int main(void)
             if (num % div == 0) {
                 if (div * div != num) {
                     printf("%lu is divisible by %lu and %lu.\n", num, div, num / div);
-                }
-                else {
+                } else {
                     printf("%lu is divisible by %lu.\n", num, div);
                 }
                 isPrime = false;

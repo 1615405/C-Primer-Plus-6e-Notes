@@ -14,8 +14,7 @@ int main(void)
         if (input % 2 == 0) {
             even_count++;
             even_sum += input;
-        }
-        else {
+        } else {
             odd_count++;
             odd_sum += input;
         }

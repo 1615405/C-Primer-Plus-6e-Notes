@@ -38,7 +38,7 @@ int main(void)
                 break;
             case EXIT:
                 printf("Bye.\n");
-                return 0; // Exit Program
+                return 0;
             default:
                 flush_input_buffer();
                 printf("Invalid input: please enter an integer between 1 and 5.\n");
@@ -53,13 +53,14 @@ int main(void)
 
         if (income > bracket) {
             taxes = RATE_2 * (income - bracket) + RATE_1 * bracket;
-        }
-        else {
+        } else {
             taxes = RATE_1 * income;
         }
 
         printf("You will owe $%.2f in taxes.\n\n", taxes);
     }
+
+    return 0;
 }
 
 void flush_input_buffer(void)

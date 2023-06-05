@@ -10,16 +10,16 @@ int main(void)
     while ((ch = getchar()) != STOP) {
         if (ch == ' ') {
             spaces++;
-        }
-        else if (ch == '\n') {
+        } else if (ch == '\n') {
             newlines++;
-        }
-        else {
+        } else {
             other++;
         }
     }
+
     printf("Character Count:\n");
     printf("----------------\n");
     printf("Spaces: %u, Newlines: %u, Other: %u\n", spaces, newlines, other);
+
     return 0;
 }

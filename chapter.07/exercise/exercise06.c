@@ -17,14 +17,12 @@ int main(void)
         ch = towlower(ch);
         if (ch == 'e') {
             e_flag = true;
-        }
-        else if (ch == 'i') {
+        } else if (ch == 'i') {
             if (e_flag) {
                 ei_count++;
             }
             e_flag = false;
-        }
-        else {
+        } else {
             e_flag = false;
         }
     }

@@ -29,6 +29,7 @@ int main(void)
                 break;
             default:
                 printf(" %c : %3d ", ch, ch);
+                break;
         }
         count++;
         if (count % 8 == 0) {
@@ -36,5 +37,6 @@ int main(void)
         }
     }
     printf("\n");
+    
     return 0;
 }

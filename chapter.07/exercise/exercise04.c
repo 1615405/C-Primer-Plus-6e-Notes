@@ -10,11 +10,9 @@ int main(void)
     while ((ch = getchar()) != STOP) {
         if (ch == '.') {
             printf("!");
-        }
-        else if (ch == '!') {
+        } else if (ch == '!') {
             printf("!!");
-        }
-        else {
+        } else {
             printf("%c", ch);
         }
     }

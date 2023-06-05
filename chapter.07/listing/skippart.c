@@ -29,9 +29,9 @@ int main(void)
     if (n > 0) {
         printf("Average of %d score is %0.1f.\n", n, total / n);
         printf("Low = %0.1f, high = %0.1f.\n", min, max);
-    }
-    else {
+    } else {
         printf("No valid scores were entered.\n");
     }
+    
     return 0;
 }

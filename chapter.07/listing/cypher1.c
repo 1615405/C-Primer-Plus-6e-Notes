@@ -11,11 +11,10 @@ int main(void)
     while ((ch == getchar()) != '\n') {
         if (ch == SPACE) {       
             putchar(ch);
-        }       
-        else {
+        } else {
             putchar(ch + 1); 
         }    
-    } 
+    }
     putchar(ch);                
 
     return 0;
