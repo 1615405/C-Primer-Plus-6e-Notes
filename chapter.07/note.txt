@@ -1,13 +1,6 @@
-The getchar() function takes no argument, and it returns the next character from input
-
 The putchar() function prints its argument. Characters really are stored as integers. In the expression ch + 1, ch 
 is expanded to type int for the calculation, and the resulting int is passed to putchar(), which takes an int 
 argument but only uses the final type to determine which character to display.
-
-Because these functions deal only with characters, they are faster and more compact than the more general scanf() and
-printf() functions. Also, note that they don't need format specifiers; that's because they work with characters only.
-Both functions are typically defined in the stdio.h file. Also, typically, they are preprocessor macros rather than 
-true functions;
 
 The rule is that an else goes with the most recent if unless braces indicate otherwise.
 
@@ -16,15 +9,13 @@ parentheses to group the subexpressions.
 
 C guarantees that logical expressions are evaluated from left to right. The && and || operators are sequence points,
 so all side effects take place before a program moves from one operand to the next. Futhermore, it guarantees that 
-as soon as an element is found that invalidates the expression as a whole, the evaluations stops.
+as soon as an element is found that invalidates the expression as a whole, the evaluations stops. Logical expressions 
+are evaluated from left to right. Evaluation stops as soon as something is discovered that renders the expression false.
 
 Logical operators normally take relational expressions as operands. The ! operator takes one operand.
 
 expression1 && expression2 is true if and only if both expressions are true. expression1 || expression2 is true if 
 either one or both expressions are true. !expression is true if the expression is false, and vice cersa.
-
-Logical expressions are evaluated from left to right. Evaluation stops as soon as something is discovered that 
-renders the expression false.
 
 The continue statement can be used in the three loop forms. When encountered, it causes the rest of an iteration to 
 be skipped and the next iteration to be started. If the continue statement is inside nested structures, it affects 
@@ -34,16 +25,10 @@ You're seen that the continue statement causes the ramaining body of a loop to b
 loops, the next action taken after the continue statement is to evaluate the loop test expression.
 For a for loop, the next actions are to evaluate the update expression and then the loop test expression.
 
-A break statement in a loop causes the program to break free of the loop that encloses it and to proceed to the next
-stage of the program. If the break statement is inside nested loops, it affects only the innermost loop containing it.
-
-A break statement takes execution directly to the first statement following the loop; unlike the case for continue in
-a for loop, the update part of the control section is skipped.
-
 What about the break statement? It causes the program to break out of the switch and skip to the next statement after
 the switch. Without the break statement, every statement from the matched label to the end of the switch would be 
 processed.
 
-The switch test expression in the parentheses should be one with an integer value(including type char). The case 
-labels must be integer-type(including char) constants or integer constant expressions(expressions containing only 
+The switch test expression in the parentheses should be one with an integer value(including type char). The case labels 
+must be integer-type(including char) constants or integer constant expressions(expressions containing only 
 integer constants).
