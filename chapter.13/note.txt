@@ -1,0 +1,57 @@
+Low-level I/O uses the fundamental I/O services provided by the operating system. Standard high-level I/O uses a 
+standard package of C library functions and stdio.h header file definition.
+
+C programs automatically open three files on your behalf. They are termed the standard input, the standard output, and 
+the standard error output. The standard input, by default, is the normal input device for your system, usually your 
+keyboard. Both the standard output and the standard error output, by default, are the normal output divice for your
+system, usually your display screen.
+
+The purpose of the standard error output file is to provide a logically distinct place to send error messages. If, for 
+example, you use redirection to send output to a file instead of to the screen, output sent to the standard error output
+still goes to the screen.
+
+The exit() function causes the program to terminate, closing any open files. In particular, the standard requires that 
+the value 0 or the marco EXIT_SUCCESS be used to indicate successful termination, and the marco EXIT_FAILURE be used to
+indicate unsuccessful termination.
+
+If you make main() into a recursive program, exit() still terminates the program, but return passes control to the 
+previous level of recursion until the original level is reached. Then return terminates the program.
+
+fopen() function: its first argument is the name of the file to be opened; more exactly, it is the address of a string
+containing that name. The second argument is a string identifying the mode in which the file is to be opened.
+
+The file pointer (FILE *fp) is of type pointer-to-FILE. FILE is a derived type defined in stdio.h. The pointer fp 
+doesn't point to the actual file. Instead, it points to a data object containing information about the file, including
+information about the buffer used for the file's I/O.
+
+The fclose(fp) function closes the file identified by fp, flushing buffers as needed.
+
+The file I/O functions fprintf() and fscanf() work just like printf() and scanf(), except that they require an 
+additional first argument to identify the proper file.
+
+The fseek() function enables you to treat a file like an array and move directly to any particular byte in a file opened
+by fopen(). Note that fseek() has three arguments and returns an int value. The ftell() function returns the current 
+position in a file as a long value.
+
+The value returned by fseek() is 0 if everything is okay, and -1 if there is an error, such as attempting to move past 
+the bounds of the file.
+
+The ftell() function is type long, and it returns the current file location.
+
+The first step in using standard I/O is to use fopen() to open a file. (Recall, however, that the stdin, stdout, and 
+stderr files are opened automatically.) The fopen() function not only opens a file but sets up a buffer(two buffers for
+read-write modes), and it sets up a data structure containing data about the file and about the buffer. Also, fopen() 
+returns a pointer to this structure so that other functions know where to find it.
+
+The next step is to call on one of the input functions declared in stdio.h, such as fscanf(), getc(), or fgets(). Calling
+any one of these functions causes a chunk of data to be copied from the file to the buffer.
+
+After the data structure and buffer are initialized, the input function reads the requested data from the buffer. As it
+does so, the file position indicator is set to point to the character following the last character read. Because all the
+input functions from the stdio.h family use the same buffer, a call to any one function resumes the previous call to any
+of the functions stopped.
+
+When an input function finds that it read all the characters in the buffer, it requests that the next buffer-sized chunk
+of data be copied from the file into the buffer. In this manner, the input functions can read all the file contents up 
+to the end of the file. After a function reads the last character of the final buffer's worth of data, it sets the 
+end-of-file indicator to true. The next call to an input function then returns EOF.

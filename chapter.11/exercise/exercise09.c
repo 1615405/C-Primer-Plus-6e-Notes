@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define LIMIT 50
+#define LIMIT 1000
 
 void reverse_string(char *string);
 char *get(char *string, int n);
