@@ -1,6 +1,7 @@
 /* min_sec.c -- converts seconds to minutes and sesonds */
 
 #include <stdio.h>
+
 #define SEC_PER_MIN 60
 
 int main(void)

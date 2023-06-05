@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-const int DAYS_PER_WEEK = 7;
-
 int main(void)
 {
+    const int DAYS_PER_WEEK = 7;
     int days;
 
     printf("Enter a number of days (or enter 0 to quit): ");

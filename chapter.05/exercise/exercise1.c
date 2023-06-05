@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-const int MINUTES_PER_HOUR = 60;
-
 int main(void)
 {
+    const int MINUTES_PER_HOUR = 60;
     int minutes;
 
     printf("Enter an amount of time in minutes: ");

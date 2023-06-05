@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-const float CM_PER_IN = 2.54;
-const int IN_PER_FT = 12;
+#define CM_PER_IN 2.54
+#define IN_PER_FT 12
 
 int main(void)
 {

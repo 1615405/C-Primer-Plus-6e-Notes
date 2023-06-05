@@ -4,10 +4,7 @@
 
 int main(void)
 {
-    int count, sum;
-
-    count = 0;
-    sum = 0;
+    int count = 0, sum = 0;
 
     while (count++ < 20) {
         sum = sum + count;
