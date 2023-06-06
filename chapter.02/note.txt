@@ -24,3 +24,6 @@ of a series of statements, each terminated by a semicolon.
 Remember, all C programs begin execution with main(), mo matter where main() is located in the program files.
 
 The C standard recommends that you provide function prototypes for all functions you use.
+
+The declaration connects a particular identifier with a particular location in computer memory, and it also establishes 
+the type of information, or data type, to be stored at that location.
