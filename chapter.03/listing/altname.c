@@ -6,9 +6,8 @@
 
 int main(void)
 {
-    int32_t me32;
-
-    me32 = 459339445;
+    int32_t me32 = 459339445;
+    
     printf("First, assume int32_t is int: ");
     printf("me32 = %d\n", me32);
     printf("Next, let's not make any assumptions.\n");

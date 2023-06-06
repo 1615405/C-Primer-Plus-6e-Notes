@@ -4,8 +4,7 @@
 
 int main(void)
 {
-    float weight;
-    float value;
+    float weight, value;
 
     printf("Are you worth your weight in platnium?\n");
     printf("Let's check it out.\n");

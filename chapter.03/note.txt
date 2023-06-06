@@ -36,9 +36,6 @@ and it uses %e to print them in exponential notation. Note that both float and d
 for output. That's because C auto-matically expands type float values to type double when they are passed as 
 arguments to any function.
 
-Including the complex.h header files lets you substitute the word complex for _Complex and the word imaginary for
-_Imaginary, and it allows you to use the symbol I to represent the square root of -1.
-
 Note that the size of char is necessarily 1 byte because C defines the size of 1 byte in terms of char. So, on a
 system a 16-bit char and a 64-bit double, sizeof will report double as having a size of 4 bytes.
 
