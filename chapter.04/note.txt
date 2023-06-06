@@ -23,9 +23,6 @@ It then concludes that it has reached the end of the integer. scanf() places the
 
 If you use a field width, scanf() halts at the field end or at the first whitespace, whichever comes first.
 
-For instance, the %x specifier requires that scanf() recognize the hexadecimal digits a-f and A-F. Floating-point 
-specifiers require that scanf() to recognize decimal points, e-notation, and the new p-notation.
-
 If you use an %s specifier, any character other than whitespace is accpetable, so scanf() skips whitespace to the 
 first non-whitespace character and then saves up non-whitespace characters until hitting whitespace again.
 
