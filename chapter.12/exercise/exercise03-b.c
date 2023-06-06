@@ -23,8 +23,7 @@ void set_mode(int *mode)
 
     if (new_mode == METRIC || new_mode == US || new_mode == QUIT) {
         *mode = new_mode;
-    }
-    else {
+    } else {
         printf("Invalid mode specified. Mode %d(%s) used.\n", *mode, *mode == METRIC ? "metric" : "US");
     }
 }
@@ -51,12 +50,10 @@ void show_info(int mode, double distance, double fuel)
     if (mode == METRIC) {
         efficiency = fuel / distance * 100;
         printf("Fuel consumption is %.3f liters per 100 kilometers.\n", efficiency);
-    }
-    else if (mode == US) {
+    } else if (mode == US) {
         efficiency = distance / fuel;
         printf("Fuel consumption is %.3f miles per gallon.\n", efficiency);
-    }
-    else {
+    } else {
         printf("Error. Invalid mode: %d\n", mode);
     }
 }

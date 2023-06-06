@@ -41,12 +41,10 @@ void show_info(void)
     if (mode == METRIC) {
         efficiency = fuel / distance * 100;
         printf("fuel consumption is %.3f liters per 100 kilometers.\n", efficiency);
-    }
-    else if (mode == US) {
+    } else if (mode == US) {
         efficiency = distance / fuel;
         printf("Fuel consumption is %.3f miles per gallon.\n", efficiency);
-    }
-    else {
+    } else {
         printf("Error, Invalid mode: %d\n", mode);
     }
 }

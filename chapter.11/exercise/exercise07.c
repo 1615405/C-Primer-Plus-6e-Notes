@@ -17,7 +17,8 @@ int main(void)
         while (getchar() != '\n') {
             continue;
         }
-        if (n > LIMIT) n = LIMIT;
+        if (n > LIMIT) 
+            n = LIMIT;
 
         puts(s2);
         mystrcpy(s1, s2, n);

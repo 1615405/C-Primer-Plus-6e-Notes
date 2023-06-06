@@ -20,18 +20,15 @@ int main(void)
             if (islower(ch)) {
                 lower++;
             }
-        }
-        else if (isdigit(ch)) {
+        } else if (isdigit(ch)) {
             digits++;
             inword = false;
-        }
-        else if (ispunct(ch)) {
+        } else if (ispunct(ch)) {
             punct++;
             if (ch != '-' && ch != '\'') {
                 inword = false;
             }
-        }
-        else if (isspace(ch)) {
+        } else if (isspace(ch)) {
             inword = false;
         }
     }

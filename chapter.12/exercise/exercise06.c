@@ -28,8 +28,7 @@ void random_sample(void)
         rand_int = rand();
         if (rand_int >= RAND_LIMIT) {
             continue;
-        }
-        else {
+        } else {
             rand_int %= 10;
             counts[rand_int]++;
         }

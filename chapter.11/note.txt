@@ -18,9 +18,6 @@ not the zero digit character).
 In short, initializing the array copies a string from static storage to the array, whereas initializing the pointer
 merely copies the address of the string.
 
-******* char heart[] = "I love Tillie!"   const char *head = "I love Tillie!" *****
-The chief difference is that the array name heart is a constant, but the pointer head is a variable.
-
 The increment operator can be used only with the names of variables (or, more generally, modifiable lvalues), not with 
 constants.
 
