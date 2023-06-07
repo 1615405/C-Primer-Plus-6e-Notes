@@ -6,10 +6,6 @@ the standard error output. The standard input, by default, is the normal input d
 keyboard. Both the standard output and the standard error output, by default, are the normal output divice for your
 system, usually your display screen.
 
-The purpose of the standard error output file is to provide a logically distinct place to send error messages. If, for 
-example, you use redirection to send output to a file instead of to the screen, output sent to the standard error output
-still goes to the screen.
-
 The file pointer (FILE *fp) is of type pointer-to-FILE. FILE is a derived type defined in stdio.h. The pointer fp 
 doesn't point to the actual file. Instead, it points to a data object containing information about the file, including
 information about the buffer used for the file's I/O.
@@ -25,5 +21,15 @@ using fflush() on an input stream is undefined.
 The setvbuf() function sets up an alternative buffer to be used by the standard I/O functions. It is called after the 
 file has been opened and before any other functions have been performed on the stream.
 
-The feof() function returns a nonzero value if the last input call detected the end-of-file, and it returns zero otherwise. 
-The ferror() function returns a nonzero value if a read or write error has occurred, and it returns zero otherwise.
+The standard I/O package automatically creates input and output buffers to speed up data transfer. The fopen() function
+opens a file for standard I/O and creates a data structure designed to hold information about the file and the buffer.
+The fopen() function returns a pointer to that data structure, and this pointer is used by other functions to identify 
+the file to be processed. The feof() and ferror() functions report the reason an I/O operation failed.
+
+ANSI C provides two file-opening modes: binary and text. When a file is opened in binary mode, it can be read byte-for-byte.
+When a file is opened in text mode, its contents may be mapped from the system representation of text to the C representation.
+For Unix and Linux System, the two modes are identical.
+
+The input functions getc(), fgets(), fscanf(), and fread() normally read a file sequentially, starting at the beginning
+of the file. However, the fseek() and ftell() functions let a program move to an arbitrary position in a file, enabling
+random access. Random access works better in the binary mode than in the text mode.
