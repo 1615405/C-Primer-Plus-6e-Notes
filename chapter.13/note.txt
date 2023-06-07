@@ -17,21 +17,3 @@ information about the buffer used for the file's I/O.
 The fseek() function enables you to treat a file like an array and move directly to any particular byte in a file opened
 by fopen(). Note that fseek() has three arguments and returns an int value. The ftell() function returns the current 
 position in a file as a long value.
-
-The first step in using standard I/O is to use fopen() to open a file. (Recall, however, that the stdin, stdout, and 
-stderr files are opened automatically.) The fopen() function not only opens a file but sets up a buffer(two buffers for
-read-write modes), and it sets up a data structure containing data about the file and about the buffer. Also, fopen() 
-returns a pointer to this structure so that other functions know where to find it.
-
-The next step is to call on one of the input functions declared in stdio.h, such as fscanf(), getc(), or fgets(). Calling
-any one of these functions causes a chunk of data to be copied from the file to the buffer.
-
-After the data structure and buffer are initialized, the input function reads the requested data from the buffer. As it
-does so, the file position indicator is set to point to the character following the last character read. Because all the
-input functions from the stdio.h family use the same buffer, a call to any one function resumes the previous call to any
-of the functions stopped.
-
-When an input function finds that it read all the characters in the buffer, it requests that the next buffer-sized chunk
-of data be copied from the file into the buffer. In this manner, the input functions can read all the file contents up 
-to the end of the file. After a function reads the last character of the final buffer's worth of data, it sets the 
-end-of-file indicator to true. The next call to an input function then returns EOF.
