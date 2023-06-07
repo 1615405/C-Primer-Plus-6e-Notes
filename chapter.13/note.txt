@@ -17,3 +17,13 @@ information about the buffer used for the file's I/O.
 The fseek() function enables you to treat a file like an array and move directly to any particular byte in a file opened
 by fopen(). Note that fseek() has three arguments and returns an int value. The ftell() function returns the current 
 position in a file as a long value.
+
+Calling the fflush() function causes any unwritten data in the output buffer to be sent to the output file identified by
+fp. This process is called flushing a buffer. If fp is the null pointer, all output buffers are flushed. The effect of 
+using fflush() on an input stream is undefined.
+
+The setvbuf() function sets up an alternative buffer to be used by the standard I/O functions. It is called after the 
+file has been opened and before any other functions have been performed on the stream.
+
+The feof() function returns a nonzero value if the last input call detected the end-of-file, and it returns zero otherwise. 
+The ferror() function returns a nonzero value if a read or write error has occurred, and it returns zero otherwise.
