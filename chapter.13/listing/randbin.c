@@ -5,7 +5,7 @@
 
 #define ARSIZE 1000
 
-int main()
+int main(void)
 {
     double numbers[ARSIZE];
     double value;
