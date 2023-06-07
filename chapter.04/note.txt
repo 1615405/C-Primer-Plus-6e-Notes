@@ -10,10 +10,6 @@ than the number of characters to be stored.
 The printf() function has a return value; it returns the number of characters it printed. Note that the count
 includes all the printed characters, including the spaces and the unseen newline character.
 
-The scanf() function uses whitespace(newlines, tabs, and spaces) to decide how to divide the input into the separate
-fields. The only exception to this is the %c specification, which reads the very next character, even if the 
-character is whitespace.
-
 Suppose you use a %d specifier to read an integer. The scanf() function begins reading input a character at a time.
 It skips over whitespace characters(spaces, tabs, and newlines) until it finds a non-whitespace character. Because 
 it is attemping to read an integer, scanf() expects to find a digit character or, perhaps, a sign(+ or -). If it 
@@ -23,14 +19,8 @@ It then concludes that it has reached the end of the integer. scanf() places the
 
 If you use a field width, scanf() halts at the field end or at the first whitespace, whichever comes first.
 
-If you use an %s specifier, any character other than whitespace is accpetable, so scanf() skips whitespace to the 
-first non-whitespace character and then saves up non-whitespace characters until hitting whitespace again.
-
 A final point: When scanf() places the string in the designated array, it adds the terminating '\0' to make the array
 contains a C string.
-
-If you use a %c specifier, all input characters are fair game. If the next input character is a space or a newline, 
-a space or a newline is assigned to the indicated variable; whitespace is not skipped.
 
 The command scanf("%c", &ch) reads the first character encountered in input, and scanf(" %c", ch) reads the first
 non-whitespace character encountered.
