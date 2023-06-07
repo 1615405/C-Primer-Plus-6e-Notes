@@ -26,11 +26,6 @@ The fseek() function enables you to treat a file like an array and move directly
 by fopen(). Note that fseek() has three arguments and returns an int value. The ftell() function returns the current 
 position in a file as a long value.
 
-The value returned by fseek() is 0 if everything is okay, and -1 if there is an error, such as attempting to move past 
-the bounds of the file.
-
-The ftell() function is type long, and it returns the current file location.
-
 The first step in using standard I/O is to use fopen() to open a file. (Recall, however, that the stdin, stdout, and 
 stderr files are opened automatically.) The fopen() function not only opens a file but sets up a buffer(two buffers for
 read-write modes), and it sets up a data structure containing data about the file and about the buffer. Also, fopen() 
