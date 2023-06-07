@@ -10,17 +10,9 @@ The purpose of the standard error output file is to provide a logically distinct
 example, you use redirection to send output to a file instead of to the screen, output sent to the standard error output
 still goes to the screen.
 
-fopen() function: its first argument is the name of the file to be opened; more exactly, it is the address of a string
-containing that name. The second argument is a string identifying the mode in which the file is to be opened.
-
 The file pointer (FILE *fp) is of type pointer-to-FILE. FILE is a derived type defined in stdio.h. The pointer fp 
 doesn't point to the actual file. Instead, it points to a data object containing information about the file, including
 information about the buffer used for the file's I/O.
-
-The fclose(fp) function closes the file identified by fp, flushing buffers as needed.
-
-The file I/O functions fprintf() and fscanf() work just like printf() and scanf(), except that they require an 
-additional first argument to identify the proper file.
 
 The fseek() function enables you to treat a file like an array and move directly to any particular byte in a file opened
 by fopen(). Note that fseek() has three arguments and returns an int value. The ftell() function returns the current 
