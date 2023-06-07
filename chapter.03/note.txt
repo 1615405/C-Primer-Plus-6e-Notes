@@ -1,25 +1,6 @@
-the %d notation is used to indicate just where in a line the integer is to be printed. The %d is called a
-format specifier because it indicates the form that printf() uses to display a value. Each %d in the format string
-must be matched by a corresponding int value int the list of items to be printed. That value can be an int variable,
-an int constant, or any other expression having an int value.
-
-To display an integer in octal notation instead of decimal, use %0 instead of %d. To display an integer in hexadecimal,
-use %x. If you want to display the C prefixes, you can use specifiers %#0, %#x, %#X to generate the 0, 0x, and 0X 
-prefixes respectively.
-
-Octal and hexadecimal constants are treated as type int unless the value is too large. Then the compiler tries
-unsigned int. If that doesn't work, it tries, in order, long, unsigned long, long long, and unsigned long long.
-
-To cause a small constant to be treated as type long, you can append an l or L as a suffix. Similarly, on those
-systems supporting the long long type, you can use ll or LL suffix to indicate a long long value.
-
 The char type is used for storing characters such as letters and punctuation marks, but technically it is an integer
 type. The char type actually stores integers, not characters. To handle characters, the computer uses a numerical
 code in which certain integers represent certain characters.
-
-C enables you to override this default by using an f or F suffix to make the compiler treat a floating-point constant
-as type float; An l or L suffix makes a number type long double.If the floating-point number has no suffix, it is
-type double.
 
 The printf() function uses the %f format specifier to print type float and double numbers using decimal notation,
 and it uses %e to print them in exponential notation. Note that both float and double use the %f, %e or %a specifier
