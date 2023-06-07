@@ -1,6 +1,5 @@
-C programs consist of one or more functions, the basic modules of a C program.
-
-In gengral, C compilers perform some preparatory work on source code before compiling; this is termed preprocessing.
+The declaration connects a particular identifier with a particular location in computer memory, and it also establishes 
+the type of information, or data type, to be stored at that location.
 
 For the most part, header files contain information used by the compiler to build the final executable program. For 
 example, they may define constants or indicate the names of functions and how they should be used. But the actual code 
@@ -8,13 +7,7 @@ for a function is in a library file of precompiled code, not in a header file. T
 takes care of finding the library code you need. In short, header files help guide the compiler in putting your program
 together correctly.
 
-In general, all C functions use braces to mark the begining as well as the end of the body of a function. Their presence 
-is mandatory.
-
 Note that the assignment statement assigns a value from the right side to the left side.
-
-C uses the terms actual argument and formal argument to distinguish between a specific value sent to a function and a 
-variable in the function used to hold the value.
 
 A program consists of a collection of one or more functions, one of which must be called main(). The description of a 
 function consists of a header and a body. The function header contains the function name along with information about 
@@ -24,6 +17,3 @@ of a series of statements, each terminated by a semicolon.
 Remember, all C programs begin execution with main(), mo matter where main() is located in the program files.
 
 The C standard recommends that you provide function prototypes for all functions you use.
-
-The declaration connects a particular identifier with a particular location in computer memory, and it also establishes 
-the type of information, or data type, to be stored at that location.
