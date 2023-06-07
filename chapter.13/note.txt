@@ -10,13 +10,6 @@ The purpose of the standard error output file is to provide a logically distinct
 example, you use redirection to send output to a file instead of to the screen, output sent to the standard error output
 still goes to the screen.
 
-The exit() function causes the program to terminate, closing any open files. In particular, the standard requires that 
-the value 0 or the marco EXIT_SUCCESS be used to indicate successful termination, and the marco EXIT_FAILURE be used to
-indicate unsuccessful termination.
-
-If you make main() into a recursive program, exit() still terminates the program, but return passes control to the 
-previous level of recursion until the original level is reached. Then return terminates the program.
-
 fopen() function: its first argument is the name of the file to be opened; more exactly, it is the address of a string
 containing that name. The second argument is a string identifying the mode in which the file is to be opened.
 
